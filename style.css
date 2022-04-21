@@ -59,6 +59,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: gre;
 }
 
 .header-nav-phone {
@@ -117,6 +118,16 @@ button:hover {
 }
 
 /**Works section**/
+.works {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-end;
+  padding: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
 .work-title {
   display: block;
   font-size: 24px;
@@ -183,4 +194,8 @@ button:hover {
   box-sizing: border-box;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.languages {
+  background-color: grey;
 }
