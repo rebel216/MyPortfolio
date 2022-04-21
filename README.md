@@ -22,6 +22,10 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 ## ScreenShot
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/Portfolio-features/Screenshot%202022-04-21%20at%202.34.22%20AM.png?raw=true "Optional Title")
 
+![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.29.57%20AM.png?raw=true "Optional Title")
+
+![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.30.08%20AM.png?raw=true "Optional Title")
+
 ## Authors
 
 👤 **Author1**
