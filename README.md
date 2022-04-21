@@ -9,14 +9,11 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 ## Built With
 
 - HTML , CSS ,Linter
-- Frameworks
+- Figma
 - VS code
 
-## Live Demo (if available)
-
-[Live Demo Link](will add later :))
-
-
+## ScreenShot
+(https://user-images.githubusercontent.com/30742617/164483679-e57ba2e2-8a8f-4d1a-994d-1956e32ea1ae.png)
 
 ## Authors
 
