@@ -13,7 +13,7 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 - VS code
 
 ## ScreenShot
-(https://user-images.githubusercontent.com/30742617/164483679-e57ba2e2-8a8f-4d1a-994d-1956e32ea1ae.png)
+![Alt text](https://github.com/rebel216/MyPortfolio/blob/Portfolio-features/Screenshot%202022-04-21%20at%202.34.22%20AM.png?raw=true "Optional Title")
 
 ## Authors
 
