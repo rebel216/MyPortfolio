@@ -28,10 +28,6 @@ h2 {
   margin-bottom: 0;
 }
 
-li {
-  margin: 0 8px;
-}
-
 button {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -47,6 +43,18 @@ button {
   border-radius: 3px;
 }
 
+.btn-pop:active {
+  background-color: #008552;
+}
+
+.header-logo:active {
+  background-color: rgba(8, 242, 144, 0.424);
+}
+
+.menu-btn:active {
+  background-color: rgba(8, 242, 144, 0.424);
+}
+
 /* Sections */
 .container {
   width: 90%;
@@ -59,7 +67,6 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: gre;
 }
 
 .header-nav-phone {
@@ -114,7 +121,7 @@ button:hover {
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 180px;
+  width: 120px;
 }
 
 /* * Works section* */
@@ -179,9 +186,10 @@ button:hover {
 }
 
 .work-tags {
+  list-style: none;
+  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .tag1 {
@@ -201,6 +209,31 @@ button:hover {
   border-radius: 8px;
 }
 
+@media (min-width: 768px) {
+  .categorie-aboutme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+}
+
 .languages {
   background-color: grey;
+}
+
+.work-bkgrnd {
+  background: #fff url(./asset/about_me_desktop_left.svg) no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.aboutme {
+  margin-top: 2em;
+  background: url(./asset/illustration_1-about_me-mobile.svg) no-repeat 100% 0%,
+    url(./asset/illustration_2-about_me_mobile.svg) no-repeat 0 300px;
+  text-align: center;
+  padding: 2em;
 }
