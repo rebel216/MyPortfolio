@@ -159,8 +159,8 @@ button:hover {
 }
 
 .btn-pop {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   border: none;
   width: fit-content;
   align-self: center;
@@ -190,6 +190,7 @@ button:hover {
 
 .work-image {
   margin-top: 1px;
+  margin-bottom: 1px;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -212,10 +213,11 @@ button:hover {
 
 .aboutme {
   margin-top: 2em;
-  background: url(./asset/header-illsutration-mobile.svg) no-repeat;
+  background: #fff url(./asset/header-illsutration-mobile.svg) no-repeat;
   text-align: center;
   padding: 2em;
   overflow: hidden;
+  background-size: 100%;
 }
 
 .btn-pop:active {
