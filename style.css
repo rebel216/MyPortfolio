@@ -43,18 +43,6 @@ button {
   border-radius: 3px;
 }
 
-.btn-pop:active {
-  background-color: #008552;
-}
-
-.header-logo:active {
-  background-color: rgba(8, 242, 144, 0.424);
-}
-
-.menu-btn:active {
-  background-color: rgba(8, 242, 144, 0.424);
-}
-
 /* Sections */
 .container {
   width: 90%;
@@ -222,18 +210,22 @@ button:hover {
   background-color: grey;
 }
 
-.work-bkgrnd {
-  background: #fff url(./asset/about_me_desktop_left.svg) no-repeat;
-  background-size: 100%;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-}
-
 .aboutme {
   margin-top: 2em;
-  background: url(./asset/illustration_1-about_me-mobile.svg) no-repeat 100% 0%,
-    url(./asset/illustration_2-about_me_mobile.svg) no-repeat 0 300px;
+  background: url(./asset/header-illsutration-mobile.svg) no-repeat;
   text-align: center;
   padding: 2em;
+  overflow: hidden;
+}
+
+.btn-pop:active {
+  background-color: #008552;
+}
+
+.header-logo:active {
+  background-color: rgba(8, 242, 144, 0.424);
+}
+
+.menu-btn:active {
+  background-color: rgba(8, 242, 144, 0.424);
 }
