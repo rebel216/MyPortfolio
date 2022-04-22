@@ -28,10 +28,6 @@ h2 {
   margin-bottom: 0;
 }
 
-li {
-  margin: 0 8px;
-}
-
 button {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -113,5 +109,123 @@ button:hover {
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 180px;
+  width: 120px;
+}
+
+/* * Works section* */
+.works {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-end;
+  padding: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.work-title {
+  display: block;
+  font-size: 24px;
+  padding: 15px;
+  align-items: center;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.work-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 1em auto;
+  width: 350px;
+  height: 600px;
+  border: 1px lightgrey solid;
+  border-radius: 5px;
+  transition: box-shadow 0.4s ease-out;
+}
+
+.work-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-pop {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
+}
+
+.work-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tag1 {
+  background: lightgray;
+  font-size: 15px;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 8px;
+}
+
+.work-image {
+  margin-top: 1px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .categorie-aboutme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+}
+
+.languages {
+  background-color: grey;
+}
+
+.aboutme {
+  margin-top: 2em;
+  background: url(./asset/header-illsutration-mobile.svg) no-repeat;
+  text-align: center;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.btn-pop:active {
+  background-color: #008552;
+}
+
+.header-logo:active {
+  background-color: rgba(8, 242, 144, 0.424);
+}
+
+.menu-btn:active {
+  background-color: rgba(8, 242, 144, 0.424);
 }
