@@ -17,7 +17,6 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 [Live Demo Link](will add later :))
 
 
-
 ## Authors
 
 👤 **Author1**
@@ -25,6 +24,11 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 - GitHub: [@Rebel216](https://github.com/Rebel216)
 - Twitter: [@Rebel216](https://twitter.com/Rebel216)
 - LinkedIn: [Rebel216](https://linkedin.com/in/Rebel216)
+
+# Authors2
+- GitHub: @ogiogiovictor
+-Twitter: [Ogiogio Victor](https://twitter.com/a0df623fb9d9482)
+-LinkedIn:  [Ogiogio Victor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
 
 
 ## 🤝 Contributing
