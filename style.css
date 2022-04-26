@@ -18,14 +18,13 @@ body {
 /* Tipography */
 h1,
 h2 {
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 button {
@@ -88,14 +87,11 @@ button:hover {
   overflow: hidden;
 }
 
-.headline h1:first-child {
-  margin-top: 1.5em;
-}
-
-.headline p {
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 28px;
+.help {
+  display: flex;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
 }
 
 .connect {
@@ -109,7 +105,11 @@ button:hover {
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 120px;
+  width: 170px;
+  text-decoration: none;
+  color: #42526e;
+  font-size: 20px;
+  margin-top: 1.5em;
 }
 
 /* * Works section* */
@@ -139,13 +139,24 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0;
   margin: 1em auto;
   width: 350px;
   height: 600px;
   border: 1px lightgrey solid;
-  border-radius: 5px;
   transition: box-shadow 0.4s ease-out;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  margin: 1em auto;
+  height: 400;
+  width: 327px;
+  border-radius: 8px;
+  background: #ebf0ee;
 }
 
 .work-card:hover {
@@ -176,26 +187,30 @@ button:hover {
 .work-tags {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
+  position: relative;
 }
 
 .tag1 {
-  background: lightgray;
+  background: lightgrey;
+  float: left;
   font-size: 15px;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 8px;
+  list-style: none;
+}
+
+.tag1:hover {
+  box-shadow: var(--shadow);
+  background-color: lightgreen;
 }
 
 .work-image {
-  margin-top: 1px;
   margin-bottom: 1px;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
@@ -212,12 +227,12 @@ button:hover {
 }
 
 .aboutme {
-  margin-top: 2em;
-  background: #fff url(./asset/header-illsutration-mobile.svg) no-repeat;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1em;
   text-align: center;
-  padding: 2em;
-  overflow: hidden;
-  background-size: 100%;
 }
 
 .btn-pop:active {
@@ -230,4 +245,54 @@ button:hover {
 
 .menu-btn:active {
   background-color: rgba(8, 242, 144, 0.424);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  height: 363px;
+  width: 327px;
+  left: 24px;
+  top: 64px;
+  border-radius: 3px;
+}
+
+.input-email {
+  align-items: center;
+  height: 48px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.input-name {
+  height: 48px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.text-area {
+  height: 114px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.mail {
+  color: #42526e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  margin: 1em auto;
+  height: 400px;
+  width: 327px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.img:hover {
+  box-shadow: var(--shadow);
 }
