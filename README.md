@@ -1,6 +1,13 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+## Getting Started
+
+**Its portfolio site , you can download it and use visual code to make changes as required and Enjoy :) **
+
+
+
+
 # MyPortfolio
 
 Its portfolio of Me as Software Developer , Highlighting the expertise , eperience and projects I have implemented.
@@ -9,13 +16,13 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 ## Built With
 
 - HTML , CSS ,Linter
-- Frameworks
+- Figma
 - VS code
 
-## Live Demo (if available)
+## ScreenShot
+![Alt text](https://github.com/rebel216/MyPortfolio/blob/Portfolio-features/Screenshot%202022-04-21%20at%202.34.22%20AM.png?raw=true "Optional Title")
 
-[Live Demo Link](will add later :))
-
+![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.29.57%20AM.png?raw=true "Optional Title")
 
 ## Authors
 
