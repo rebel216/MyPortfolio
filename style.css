@@ -187,8 +187,7 @@ button:hover {
 }
 
 .tag1 {
-  background: #ffffff;
-
+  background: #fff;
   float: left;
   font-size: 15px;
   padding: 0.5em;
@@ -199,7 +198,6 @@ button:hover {
 
 .tag {
   background: lightgrey;
-
   float: left;
   font-size: 15px;
   padding: 0.5em;
