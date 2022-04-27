@@ -24,7 +24,7 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.29.57%20AM.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.03.58%20AM.png?raw=true "Optional Title")
+
 
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.19%20AM.png?raw=true "Optional Title")
 
@@ -32,13 +32,9 @@ Its portfolio of Me as Software Developer , Highlighting the expertise , eperien
 
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.31%20AM.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.34%20AM.png?raw=true "Optional Title")
-
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.40%20AM.png?raw=true "Optional Title")
 
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.54%20AM.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.05.03%20AM.png?raw=true "Optional Title")
 ## Authors
 
 👤 **Author1**
