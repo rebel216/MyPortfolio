@@ -196,6 +196,12 @@ button:hover {
   color: #42526e;
 }
 
+@media (min-width: 768px) {
+  .mobilehide {
+    display: block;
+  }
+}
+
 /* * Works section* */
 .works {
   display: flex;
@@ -265,6 +271,11 @@ button:hover {
   width: 327px;
   border-radius: 8px;
   background: #ebf0ee;
+  transition: box-shadow 0.4s ease-out;
+}
+
+.skill-card:hover {
+  box-shadow: var(--shadow);
 }
 
 .work-card:hover {
@@ -433,6 +444,16 @@ button:hover {
     grid-auto-flow: column;
     list-style: none;
   }
+}
+
+.deskimg {
+  /* prettier-ignore */
+  background: url(./asset/illustration-1-contact-form-desktop.svg) no-repeat 0% 90%, url(./asset/illustration-2-contact-form-desktop.svg) no-repeat 30% 90%, url(./asset/illustratoin-3-contact-form-desktop.svg) no-repeat 100% 90%;
+}
+
+.contactimg {
+  /* prettier-ignore */
+  background: url(./asset/illustration-contact-form.svg) no-repeat 100% 90%;
 }
 
 .img:hover {
