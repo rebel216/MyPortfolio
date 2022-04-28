@@ -68,7 +68,7 @@ h1 span {
 @media (min-width: 768px) {
   .aboutmeimage {
     /* prettier-ignore */
-    background: url(./asset/about_me_desktop_left.svg) no-repeat 0% 20%, url(./asset/about_me_desktop_rigth.svg) no-repeat 100% 0%;
+    background: url(./asset/about_me_desktop_left.svg) no-repeat 0% 50%, url(./asset/about_me_desktop_rigth.svg) no-repeat 100% 0%;
   }
 }
 
@@ -206,6 +206,10 @@ button:hover {
   color: #42526e;
   margin-top: 60px;
   list-style: none;
+}
+
+.social-media a {
+  padding-left: 10px;
 }
 
 .disabled {
@@ -346,7 +350,13 @@ button:hover {
 }
 
 .work-tags {
+  display: flex;
   list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-wrap: wrap;
 }
 
 .tag1 {
@@ -503,6 +513,15 @@ button:hover {
     margin: 2em 24px;
     text-align: center;
     color: #172b4d;
+    margin-top: -10px;
+  }
+
+  .form div {
+    margin-top: -50px;
+  }
+
+  .work {
+    margin-top: -90px;
   }
 }
 
@@ -555,7 +574,7 @@ button:hover {
 
 .deskimg {
   /* prettier-ignore */
-  background: url(./asset/illustration-1-contact-form-desktop.svg) no-repeat 0% 90%, url(./asset/illustration-2-contact-form-desktop.svg) no-repeat 30% 90%, url(./asset/illustratoin-3-contact-form-desktop.svg) no-repeat 100% 90%;
+  background: url(./asset/illustration-1-contact-form-desktop.svg) no-repeat 0% 100%, url(./asset/illustration-2-contact-form-desktop.svg) no-repeat 20% 100%, url(./asset/illustratoin-3-contact-form-desktop.svg) no-repeat 100% 90%;
 }
 
 .contactimg {
@@ -585,7 +604,15 @@ button:hover {
   margin-top: 5rem;
 }
 
-.getintouch p {
+.social-footer a {
+  padding-left: 10px;
+}
+
+.getintouch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -594,8 +621,8 @@ button:hover {
   color: #172b4d;
   min-width: 300px;
   margin-right: 100px;
-  margin-top: 90px;
-  margin-left: -130px;
+  margin-top: -90px;
+  margin-left: -10px;
 }
 
 .footer-form {
