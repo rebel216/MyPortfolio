@@ -103,6 +103,9 @@ button {
   padding: 1em 1.5em;
   color: white;
   border-radius: 3px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .container-flex {
@@ -182,6 +185,7 @@ button {
 
 button:hover {
   box-shadow: 0 8px 16px rgba(8, 242, 144, 0.424);
+  background-color: #1bdd8c;
 }
 
 .help {
@@ -630,7 +634,6 @@ button:hover {
   flex-direction: row;
   padding-left: 270px;
   padding-right: 370px;
-  margin: 1em 1em;
   text-align: left;
 }
 
