@@ -185,6 +185,7 @@ button {
 
 button:hover {
   box-shadow: 0 8px 16px rgba(8, 242, 144, 0.424);
+  background-color: #1bdd8c;
 }
 
 .help {
