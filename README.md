@@ -29,11 +29,7 @@ https://rebel216.github.io/MyPortfolio/
 
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.29.57%20AM.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.19%20AM.png?raw=true "Optional Title")
-
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.26%20AM.png?raw=true "Optional Title")
-
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-desktop-version/Screenshot%202022-04-28%20at%205.04.31%20AM.png?raw=true "Optional Title")
+![Screenshot 2022-04-30 at 4 33 40 PM](https://user-images.githubusercontent.com/30742617/166103199-0b666993-bf0c-4cd7-8351-bfe8a26a0b4c.png)
 
 
 ## Authors
