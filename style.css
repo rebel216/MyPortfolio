@@ -202,7 +202,7 @@ button:hover {
 }
 
 .social-media {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -482,6 +482,8 @@ button:hover {
   align-items: center;
   list-style: none;
   justify-content: center;
+  margin-left: 122px;
+  margin-top: -12px;
   width: 170px;
 }
 
