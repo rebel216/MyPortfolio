@@ -208,8 +208,39 @@ button:hover {
   text-align: center;
   padding-right: 82px;
   color: #42526e;
-  margin-top: 60px;
   list-style: none;
+}
+
+.social-media ul {
+  margin-top: 160px;
+}
+
+@media (max-width: 768px) {
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 72px;
+    color: #42526e;
+    margin-top: 60px;
+    list-style: none;
+    margin-left: 2px;
+  }
+  .mail {
+    color: #42526e;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin-left: -9px;
+    margin-top: -12px;
+    width: 170px;
+  }
+  .social-media ul {
+    margin-top: 10px;
+  }
 }
 
 .social-media a {
@@ -217,8 +248,9 @@ button:hover {
 }
 
 .disabled {
-  margin-top: 90px;
+  margin-top: 150px;
   padding-right: 32px;
+  margin-left: 82px;
 }
 
 .indicator {
@@ -473,22 +505,6 @@ button:hover {
   border-radius: 4px;
   height: 114px;
   width: 684px;
-}
-
-.mail {
-  color: #42526e;
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  list-style: none;
-  justify-content: center;
-  margin-left: 122px;
-  margin-top: -12px;
-  width: 170px;
-}
-
-.mail:invalid:required {
-  border: red;
 }
 
 .form {
