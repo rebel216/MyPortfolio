@@ -223,7 +223,7 @@ button:hover {
     text-align: center;
     padding-right: 72px;
     color: #42526e;
-    margin-top: 60px;
+    margin-top: 10px;
     list-style: none;
     margin-left: 2px;
   }
@@ -248,7 +248,7 @@ button:hover {
 }
 
 .disabled {
-  margin-top: 150px;
+  margin-top: 10px;
   padding-right: 32px;
   margin-left: 82px;
 }
