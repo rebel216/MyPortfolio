@@ -227,6 +227,7 @@ button:hover {
     list-style: none;
     margin-left: 2px;
   }
+
   .mail {
     color: #42526e;
     padding-top: 15px;
@@ -238,6 +239,7 @@ button:hover {
     margin-top: -12px;
     width: 170px;
   }
+
   .social-media ul {
     margin-top: 10px;
   }
