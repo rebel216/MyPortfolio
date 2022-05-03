@@ -202,29 +202,23 @@ button:hover {
 
 .social-media {
   display: block;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-right: 82px;
+  padding-right: 72px;
   color: #42526e;
-  list-style: none;
-}
-
-.social-media ul {
-  margin-top: 150px;
+  margin-left: 42px;
+  margin-top: 32px;
 }
 
 @media (max-width: 768px) {
   .social-media {
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     text-align: center;
     padding-right: 72px;
     color: #42526e;
     margin-top: 10px;
-    list-style: none;
-    margin-left: 2px;
+    margin-left: 42px;
   }
 
   .mail {
@@ -232,15 +226,10 @@ button:hover {
     padding-top: 15px;
     display: flex;
     align-items: center;
-    list-style: none;
     justify-content: center;
-    margin-left: -9px;
+    margin-left: 180px;
     margin-top: -12px;
     width: 170px;
-  }
-
-  .social-media ul {
-    margin-top: 10px;
   }
 }
 
@@ -251,7 +240,7 @@ button:hover {
 .disabled {
   margin-top: 10px;
   padding-right: 32px;
-  margin-left: 82px;
+  margin-left: 32px;
 }
 
 .indicator {
