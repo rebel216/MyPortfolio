@@ -116,20 +116,6 @@ button {
   margin-top: -200px;
 }
 
-.nav-desktop {
-  display: none;
-}
-
-.nav-desktop li {
-  list-style: none;
-  padding: 0;
-  margin: 1em;
-  font-size: 14px;
-  font-weight: bold;
-  color: #42526e;
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .nav-desktop {
     display: flex;
@@ -140,9 +126,40 @@ button {
     padding-top: 1em;
     margin: 0;
   }
+
+  .nav-desktop li {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    color: #42526e;
+    cursor: pointer;
+  }
 }
 
 .header-nav-phone {
+  display: none;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 1em;
+    margin: 0;
+  }
+}
+
+.header-nav-phone {
+  display: flex;
   padding: 0 35px;
   display: flex;
   justify-content: space-between;
@@ -212,7 +229,7 @@ button:hover {
 }
 
 .social-media ul {
-  margin-top: 160px;
+  margin-top: 150px;
 }
 
 @media (max-width: 768px) {
@@ -569,6 +586,12 @@ button:hover {
   display: grid;
 }
 
+@media (min-width: 768px) {
+  .formdesk {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .formdesk {
     display: block;
@@ -610,26 +633,48 @@ button:hover {
   box-shadow: var(--shadow);
 }
 
+@media (max-width: 768px) {
+  .footer-social {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-footer {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    color: #42526e;
+    margin-top: 5rem;
+  }
+
+  .social-footer a {
+    padding-left: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+  .social-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    color: #42526e;
+    margin-top: 5rem;
+  }
+
+  .social-footer a {
+    padding-left: 20px;
+  }
+
   .footer-social {
     display: block;
     height: 1px;
     background: #dfe1e6;
   }
-}
-
-.social-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  padding-top: 1rem;
-  color: #42526e;
-  margin-top: 5rem;
-}
-
-.social-footer a {
-  padding-left: 20px;
 }
 
 .getintouch {
