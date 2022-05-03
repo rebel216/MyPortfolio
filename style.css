@@ -201,21 +201,23 @@ button:hover {
 }
 
 .social-media {
+  display: block;
   align-items: center;
   text-align: center;
   padding-right: 72px;
   color: #42526e;
   margin-left: 42px;
-  margin-top: 32px;
+  margin-top: 222px;
 }
 
 @media (max-width: 768px) {
   .social-media {
+    display: block;
     align-items: center;
     text-align: center;
     padding-right: 72px;
     color: #42526e;
-    margin-top: 10px;
+    margin-top: 220px;
     margin-left: 42px;
   }
 
