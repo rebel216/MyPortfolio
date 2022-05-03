@@ -138,30 +138,15 @@ button {
   }
 }
 
-.header-nav-phone {
-  display: none;
-  padding: 0 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    padding-top: 1em;
-    margin: 0;
   }
 }
 
 .header-nav-phone {
   display: flex;
   padding: 0 35px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -185,10 +170,7 @@ button {
 
 @media (min-width: 768px) {
   .header-nav-phone {
-    display: flex;
-    padding: 0 35px;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
   }
 
   .menu-btn {
