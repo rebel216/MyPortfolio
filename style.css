@@ -201,7 +201,6 @@ button:hover {
 }
 
 .social-media {
-  display: block;
   align-items: center;
   text-align: center;
   padding-right: 72px;
@@ -212,7 +211,6 @@ button:hover {
 
 @media (max-width: 768px) {
   .social-media {
-    display: block;
     align-items: center;
     text-align: center;
     padding-right: 72px;
