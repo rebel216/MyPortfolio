@@ -19,6 +19,10 @@ ul li {
   list-style: none;
 }
 
+.noscroll {
+  position: fixed !important;
+}
+
 /* Tipography */
 h1,
 h2 {
