@@ -19,6 +19,10 @@ ul li {
   list-style: none;
 }
 
+.noscroll {
+  position: fixed !important;
+}
+
 /* Tipography */
 h1,
 h2 {
@@ -136,6 +140,17 @@ button {
     color: #42526e;
     cursor: pointer;
   }
+
+  .nav-desktop li a {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    color: #42526e;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 768px) {
@@ -208,6 +223,7 @@ button:hover {
   color: #42526e;
   margin-left: 42px;
   margin-top: 222px;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -217,8 +233,9 @@ button:hover {
     text-align: center;
     padding-right: 72px;
     color: #42526e;
-    margin-top: 220px;
+    margin-top: 270px;
     margin-left: 42px;
+    text-decoration: none;
   }
 
   .mail {
@@ -227,7 +244,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 95px;
+    margin-left: 177px;
     margin-top: -12px;
     width: 170px;
   }
@@ -235,10 +252,11 @@ button:hover {
 
 .social-media a {
   padding-left: 10px;
+  text-decoration: none;
 }
 
 .disabled {
-  margin-top: 10px;
+  margin-top: 30px;
   padding-right: 32px;
   margin-left: 32px;
 }
@@ -685,4 +703,64 @@ button:hover {
 
 .footer-form form {
   margin-left: -130px;
+}
+
+.mobile-menu-hide {
+  display: none;
+}
+
+.mobile-menu-show {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #3a4a42;
+  border: 1px lightgrey solid;
+  border-radius: 20px;
+}
+
+.mobile-menu-show > ul > li {
+  margin-left: 28px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-menu-show > ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+}
+
+.mobile-menu-show > ul > li > a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a4a42;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mobile-menu-show > button {
+  margin: 0.5em 0.5em;
+  align-self: flex-end;
+  cursor: pointer;
+  background-color: white;
+}
+
+.mobile-menu-show > img {
+  width: 2em;
+}
+
+.link-portfolio:hover,
+.link-about:hover,
+.link-contact:hover {
+  color: var(--color-primary);
 }

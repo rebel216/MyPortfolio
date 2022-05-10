@@ -14,10 +14,32 @@
     <header>
       <div class="header-nav-phone">
         <a href="/" class="header-logo"> Welcome </a>
-        <nav>
-          <button type="button" class="menu-btn">
-            <img src="./asset/Button.svg" alt="menu link" />
+
+        <button id="mobile-menu-button" type="button" class="menu-btn">
+          <img src="./asset/Button.svg" alt="menu link" />
+        </button>
+        <nav id="mobile-menu-hide" class="mobile-menu-hide">
+          <button type="button" id="btn-close-nav">
+            <img src="./asset/Icon-Cancel.svg" alt="cancel icon">
           </button>
+          <ul>
+            <li>
+              <a href="#myworks-id" class="link-portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#aboutme-id" class="link-about">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#footer-contact-id" class="link-contact">
+                Contact
+              </a>
+            </li>
+
+          </ul>
         </nav>
       </div>
     </header>
@@ -26,9 +48,21 @@
       <div class="headline">
         <nav>
           <ul class="nav-desktop">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>
+              <a href="#myworks-id" class="link-portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#aboutme-id" class="link-about">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact-id-desk" class="link-contact">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="form">
@@ -76,7 +110,7 @@
     </section>
 
     <section>
-      <div class="container-flex">
+      <div class="container-flex" id="myworks-id">
         <h1 class="recent-works" hidden>My Recent <br />Works</h1>
         <h1 class="recent-works-desk" hidden>My Recent Works</h1>
         <img class="indicator" src="./asset/Indicator.svg" alt="Tonic work" />
@@ -176,7 +210,7 @@
     </section>
 
     <div class="aboutmeimage">
-      <div class="form">
+      <div class="form" id="aboutme-id">
         <h2>About Me</h2>
 
         <p class="about-me">
@@ -288,7 +322,7 @@
           </form>
         </div>
         <div class="container-flex">
-          <div class="social-media">
+          <div class="social-media" id="footer-contact-id">
             <a href="">
               <img src="./asset/twitter.svg" alt="twitter icon" />
             </a>
@@ -326,7 +360,7 @@
             like to chat please get in touch.
           <p>
         </div>
-        <div class="form-centre"></div>
+        <div id="contact-id-desk" class="form-centre"></div>
 
         <form action="https://formspree.io/f/meqnpgav" method="POST">
           <ul>
@@ -379,7 +413,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./Js/index.js"></script>
   </body>
 
 </html>
