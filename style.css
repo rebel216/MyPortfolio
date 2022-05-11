@@ -757,14 +757,6 @@ button {
 
 /* Work PopUps */
 
-body:after .pop-up {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  filter: blur(2px);
-}
-
 .card-work-detail {
   position: fixed;
   align-items: center;
@@ -1024,7 +1016,6 @@ body:after .pop-up {
     height: 12px;
     line-height: 11px;
     margin-top: 670px;
-    /* Theme 2 / Primary 2 */
     background: #36b37f;
     border-radius: 4px;
     gap: 21px;
@@ -1069,7 +1060,6 @@ body:after .pop-up {
     gap: 2px;
     line-height: 9px;
     align-items: center;
-    padding: 8px 12px;
     text-align: center;
     width: 70px;
     height: 22px;
