@@ -5,7 +5,7 @@ const PortfolioClicked = document.querySelector('.link-portfolio');
 const AboutClicked = document.querySelector('.link-about');
 const ContactClicked = document.querySelector('.link-contact');
 
-let page = document.getElementsByTagName('body')[0];
+const page = document.getElementsByTagName('body')[0];
 
 function displaymobilemenu() {
   mobileMenu.classList.replace('mobile-menu-hide', 'mobile-menu-show');
