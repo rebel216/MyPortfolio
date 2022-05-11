@@ -131,7 +131,7 @@ const WorkDetailsMobile = (index) => `
           <h2 class="card-title-mobile">
               ${dataCards[index].title}
           </h2>
-            <div class="card-links-mobile">
+            <div class="card-links-mobile ">
                   <a href=${dataCards[index].linkVersion} class="btn-card-details-mobile">
                   See Live
                   <img src="./asset/see_live_icon.svg" alt="cat cute">
@@ -141,7 +141,7 @@ const WorkDetailsMobile = (index) => `
                   <img src="./asset/github_white.svg" alt="cat cute">
                   </a>
           </div>
-          <div >
+          <div>
           <ul class="work-tag-popup">
               <li class="mobile-tag">${dataCards[index].tecnologies.tech1}</li>
               <li class="mobile-tag">${dataCards[index].tecnologies.tech2}</li>
@@ -156,6 +156,7 @@ const WorkDetailsMobile = (index) => `
           </div>
         <script src="index.js"></script>
   </article>
+  
   `;
 
 for (let i = 0; i < allBtnPopups.length; i++) {
@@ -163,7 +164,7 @@ for (let i = 0; i < allBtnPopups.length; i++) {
     const cardWork = document.createElement("div");
     cardWork.innerHTML = WorkDetailsMobile(i);
     document.body.appendChild(cardWork);
-    alert("cliclked");
+    //alert("cliclked");
     const btnCloseDetailsMobile = document.querySelector(".btn-close-detail");
     btnCloseDetailsMobile.addEventListener("click", async () => {
       document.body.removeChild(cardWork);

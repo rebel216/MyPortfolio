@@ -131,7 +131,7 @@ button {
     cursor: pointer;
   }
 
-  .nav-desktop li a {
+  .nav-desktop > li > a {
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -187,7 +187,7 @@ button {
   }
 }
 
-button:hover {
+.btn-pop:hover {
   box-shadow: 0 8px 16px rgba(8, 242, 144, 0.424);
   background-color: #1bdd8c;
 }
@@ -899,7 +899,6 @@ button:hover {
     position: fixed;
     width: 600px;
     height: 1100px;
-    background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin-top: 20px;
@@ -926,81 +925,100 @@ button:hover {
   }
 
   .card-work-detail img {
-    height: 220px;
-    width: 311px;
+    height: 320px;
+    width: 511px;
     left: 1px;
     top: 1px;
     border-radius: 8px;
     margin-left: 10px;
-    margin-top: -259px;
+    margin-top: -59px;
   }
 
   .popup-paragraph {
-    width: 311px;
+    width: 411px;
     height: 313px;
     margin-left: 10px;
+    margin-top: 120px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
   }
 
-  .popup-paragraph p {
+  .popup-paragraph > p {
     text-align: left;
   }
 
-  .btn-close-detail {
+  .btn-close-detail > img {
+    display: block;
     flex-direction: row;
     align-items: flex-start;
     padding: 9px;
-    margin-right: -21px;
-    margin-top: -22px;
-    border-style: dashed;
+    margin-left: -21px;
+    margin-top: -62px;
     border-radius: 8px;
     display: flex;
     position: absolute;
     width: 40px;
     height: 40px;
     right: 24px;
-    top: calc(50% - 40px / 2 - 497.5px);
     background-color: white;
-    mix-blend-mode: multiply;
   }
 
   .work-tag-popup {
     display: flex;
-    flex-shrink: 2;
-    font-size: 12px;
+    gap: 1px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0.03em;
     flex-direction: row;
     align-items: center;
-    padding: 15px;
+    padding: 0.05em;
+    margin: 0.05em;
     width: 77px;
-    margin-right: 810px;
-    margin-top: -75px;
-    height: 22px;
+    margin-right: 320px;
+    height: 42px;
     color: #0e0e0e;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .card-links-mobile {
+    gap: 250px;
+    margin-left: -380px;
+  }
+
+  .btn-card-details-mobile > img {
+    display: flex;
+    gap: 20px;
+    margin-top: 1px;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    align-items: center;
+    padding: 18px;
+    width: 77px;
+    margin-left: -10px;
+    height: 22px;
+    color: #f6f0f0;
+    background-color: #36b37e;
     border-radius: 8px;
     text-align: center;
   }
 
-  .card-links-mobile {
-    top: 4px;
-    gap: 200px;
-    bottom: 1px;
-    margin-left: -390px;
-  }
-
-  .card-links-mobile a {
+  .btn-card-details-mobile {
     border-radius: 9px;
+    text-align: center;
+    justify-content: left;
+    gap: -191px;
     margin-bottom: -1100px;
     width: 98px;
     height: 24px;
-    font-style: normal;
-    font-weight: 500;
     font-size: 15px;
     line-height: 24px;
     color: #fff;
@@ -1012,13 +1030,14 @@ button:hover {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    width: 84px;
-    height: 22px;
-    margin: 23px;
+    width: 90px;
+    height: 42px;
+    margin: 3px;
     background: #ebecf0;
     padding: 1px;
     border-radius: 8px;
     flex: none;
     order: 3;
+    row-gap: 2px;
   }
 }
