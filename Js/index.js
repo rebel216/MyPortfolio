@@ -10,13 +10,11 @@ var page = document.getElementsByTagName("body")[0];
 var popup = document.getElementsByClassName("desk-work-list");
 
 function displaymobilemenu() {
-  //alert("changed");
   mobileMenu.classList.replace("mobile-menu-hide", "mobile-menu-show");
   page.classList.add("noscroll");
 }
 
 function hidemobilemenu() {
-  //alert("changed");
   mobileMenu.classList.replace("mobile-menu-show", "mobile-menu-hide");
   page.classList.remove("noscroll");
 }
