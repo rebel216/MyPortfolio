@@ -84,21 +84,6 @@ h1 span {
   }
 }
 
-.btn-pop {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: none;
-  width: fit-content;
-  align-self: center;
-  background: var(--color-primary);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 1em 1.5em;
-  color: white;
-  border-radius: 3px;
-}
-
 button {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -200,6 +185,21 @@ button {
   .header-logo {
     display: none;
   }
+}
+
+.btn-pop {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
 }
 
 .btn-pop:hover {
@@ -764,6 +764,7 @@ button {
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
+  height: 1000px;
   margin-top: 11px;
   top: 1px;
   background: #fff;
@@ -793,7 +794,7 @@ button {
   width: 77px;
   margin-left: 510px;
   margin-right: 30px;
-  margin-top: -57px;
+  margin-top: -50px;
   height: 51px;
   color: #f6f0f0;
   border-radius: 8px;
@@ -826,7 +827,7 @@ button {
   padding: 18px;
   width: 77px;
   margin-right: 810px;
-  margin-top: -75px;
+  margin-top: -62px;
   height: 22px;
   color: #0e0e0e;
   border-radius: 8px;
@@ -874,33 +875,33 @@ button {
   text-align: left;
 }
 
-.card-image-details img {
-  height: 616px;
+.card-image-details > img {
+  height: 550px;
   width: 872px;
   left: 24px;
   top: 78px;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: -105px;
 }
 
 .btn-close-detail {
+  background-color: white;
+}
+
+.btn-close-detail > img {
   display: block;
   flex-direction: row;
   align-items: flex-start;
+  padding: 9px;
+  margin-right: 11px;
+  margin-top: -101px;
+  border-radius: 8px;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 24px;
-  top: calc(50% - 40px / 2 - 497.5px);
-  margin-right: 20px;
-  margin-top: 20px;
-  background-image: './asset/Icon-Cancel.svg';
-  mix-blend-mode: multiply;
-  border-radius: 2px;
-  cursor: pointer;
-  align-items: center;
+  width: 16px;
+  height: 15px;
+  right: -1px;
+  background-color: white;
 }
-
 
 @media (max-width: 768px) {
   .card-work-detail {
@@ -926,29 +927,28 @@ button {
     mix-blend-mode: multiply;
   }
 
-  .card-title-mobile > h2 {
+  .card-title-mobile {
     font-weight: 900;
     margin-right: 10px;
     font-size: 25px;
     margin-left: 10px;
-    margin-top: 10px;
   }
 
   .card-work-detail img {
     height: 320px;
-    width: 511px;
+    width: 551px;
     left: 1px;
     top: 1px;
     border-radius: 8px;
-    margin-left: 10px;
-    margin-top: -59px;
+    margin-left: -1px;
+    margin-top: -290px;
   }
 
   .popup-paragraph {
     width: 411px;
     height: 313px;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -960,19 +960,22 @@ button {
     text-align: left;
   }
 
+  .btn-close-detail {
+    background: #ebecf0;
+  }
+
   .btn-close-detail > img {
-    display: flex;
+    display: block;
     flex-direction: row;
     align-items: flex-start;
     padding: 9px;
-    margin-left: -21px;
-    margin-top: -62px;
+    margin-left: 542px;
+    margin-top: 9px;
     border-radius: 8px;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 24px;
-    background-color: white;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
   }
 
   .work-tag-popup {
@@ -1048,9 +1051,5 @@ button {
     flex: none;
     order: 3;
     row-gap: 2px;
-  }
-
-  .worktag-popup {
-    margin-top: 10px;
   }
 }
