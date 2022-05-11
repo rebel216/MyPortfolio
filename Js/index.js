@@ -128,9 +128,11 @@ const WorkDetailsMobile = (index) => `
               <img src=${dataCards[index].url} alt="cat cute">
           </div>
           </div>
-          <h2 class="card-title-mobile">
+          <div class="card-title-mobile">
+          <h2>
               ${dataCards[index].title}
           </h2>
+          </div>
             <div class="card-links-mobile ">
                   <a href=${dataCards[index].linkVersion} class="btn-card-details-mobile">
                   See Live
@@ -141,7 +143,7 @@ const WorkDetailsMobile = (index) => `
                   <img src="./asset/github_white.svg" alt="cat cute">
                   </a>
           </div>
-          <div>
+          <div class="worktag-popup">
           <ul class="work-tag-popup">
               <li class="mobile-tag">${dataCards[index].tecnologies.tech1}</li>
               <li class="mobile-tag">${dataCards[index].tecnologies.tech2}</li>
