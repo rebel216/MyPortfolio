@@ -84,6 +84,21 @@ h1 span {
   }
 }
 
+.btn-pop {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
+}
+
 button {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -366,21 +381,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.btn-pop {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: none;
-  width: fit-content;
-  align-self: center;
-  background: var(--color-primary);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 1em 1.5em;
-  color: white;
-  border-radius: 3px;
 }
 
 .work-tags {
@@ -790,11 +790,10 @@ button {
   flex-direction: row;
   align-items: center;
   padding: 28px;
-  margin-top: -51px;
   width: 77px;
   margin-left: 510px;
   margin-right: 30px;
-  margin-top: -100px;
+  margin-top: -57px;
   height: 51px;
   color: #f6f0f0;
   border-radius: 8px;
@@ -960,14 +959,13 @@ button {
   }
 
   .btn-close-detail > img {
-    display: block;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 9px;
     margin-left: -21px;
     margin-top: -62px;
     border-radius: 8px;
-    display: flex;
     position: absolute;
     width: 40px;
     height: 40px;
