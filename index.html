@@ -309,14 +309,17 @@
                   placeholder="Last name" required />
               </li>
               <li>
-                <input class="input-email" type="email" name="email" id="email" placeholder="Email address" required />
+                <input class="input-email" type="email" name="email" id="email-form1" placeholder="Email address"
+                  required />
               </li>
               <li>
                 <textarea class="text-area" name="text_area" id="text_area" cols="30" rows="10" maxlength="5"
                   placeholder="Enter text here" required></textarea>
               </li>
               <li>
-                <button type="submit" class="btn-pop">Get In Touch</button>
+                <p id="error1"></p>
+                <button type="submit" id="submit-form1" class="btn-pop">Get In Touch</button>
+
               </li>
             </ul>
           </form>
@@ -373,14 +376,15 @@
             </li>
 
             <li>
-              <input class="input-email-desk" type="email" name="email" placeholder="Email address" required />
+              <input class="input-email-desk" type="email" placeholder="Email address" id="email-form" required />
             </li>
             <li>
               <textarea class="text-area-desk" name="text_area" cols="30" rows="10" maxlength="5"
                 placeholder="Enter text here" required></textarea>
             </li>
             <li>
-              <button type="submit" class="btn-pop">Get In Touch</button>
+              <p id="error"></p>
+              <button type="submit" class="btn-pop" id="submit-form">Get In Touch</button>
             </li>
           </ul>
         </form>
