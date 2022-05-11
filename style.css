@@ -765,6 +765,7 @@ button:hover {
   justify-content: center;
   margin-left: 10%;
   margin-top: 11px;
+  top: 1px;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 1px 48px 48px rgba(37, 47, 137, 0.08);

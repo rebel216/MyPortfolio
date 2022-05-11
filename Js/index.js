@@ -163,6 +163,7 @@ for (let i = 0; i < allBtnPopups.length; i++) {
     const cardWork = document.createElement("div");
     cardWork.innerHTML = WorkDetailsMobile(i);
     document.body.appendChild(cardWork);
+    alert("cliclked");
     const btnCloseDetailsMobile = document.querySelector(".btn-close-detail");
     btnCloseDetailsMobile.addEventListener("click", async () => {
       document.body.removeChild(cardWork);
