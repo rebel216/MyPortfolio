@@ -130,9 +130,11 @@ const WorkDetailsMobile = (index) => `<div class="pop-up">
               <img src=${dataCards[index].url} alt="cat cute">
           </div>
           </div>
-          <h2 class="card-title-mobile">
+          <div class="card-title-mobile">
+          <h2>
               ${dataCards[index].title}
           </h2>
+          </div>
             <div class="card-links-mobile ">
                   <a href=${dataCards[index].linkVersion} class="btn-card-details-mobile">
                   See Live

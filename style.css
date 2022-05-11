@@ -773,13 +773,20 @@ button {
   border-radius: 8px;
 }
 
-.card-title-mobile > h2 {
+.card-title-mobile {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: left;
-  justify-content: left;
+  width: 300px;
+  height: 100px;
   margin-left: -300px;
+}
+
+.card-title-mobile > h2 {
+  text-align: left;
+  margin-left: -125px;
+  justify-content: left;
+  margin-top: 12px;
 }
 
 .card-links-mobile {
@@ -794,7 +801,7 @@ button {
   width: 77px;
   margin-left: 510px;
   margin-right: 30px;
-  margin-top: -50px;
+  margin-top: -80px;
   height: 51px;
   color: #f6f0f0;
   border-radius: 8px;
@@ -827,7 +834,7 @@ button {
   padding: 18px;
   width: 77px;
   margin-right: 810px;
-  margin-top: -62px;
+  margin-top: 2px;
   height: 22px;
   color: #0e0e0e;
   border-radius: 8px;
@@ -928,10 +935,20 @@ button {
   }
 
   .card-title-mobile {
-    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
     margin-right: 10px;
     font-size: 25px;
     margin-left: 10px;
+  }
+
+  .card-title-mobile > h2 {
+    text-align: left;
+    line-height: 32px;
+    font-weight: 300px;
+    font-size: 30px;
+    margin-left: -5px;
   }
 
   .card-work-detail img {
@@ -941,7 +958,7 @@ button {
     top: 1px;
     border-radius: 8px;
     margin-left: -1px;
-    margin-top: -90px;
+    margin-top: -180px;
   }
 
   .popup-paragraph {
@@ -1015,7 +1032,7 @@ button {
     width: 150px;
     height: 12px;
     line-height: 11px;
-    margin-top: 670px;
+    margin-top: 800px;
     background: #36b37f;
     border-radius: 4px;
     gap: 21px;
@@ -1063,8 +1080,8 @@ button {
     text-align: center;
     width: 70px;
     height: 22px;
-    margin-left: 45px;
-    margin-top: -200px;
+    margin-left: 40px;
+    margin-top: -150px;
     background: #ebecf0;
     padding: 1px;
     border-radius: 8px;
