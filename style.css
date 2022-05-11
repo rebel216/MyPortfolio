@@ -763,14 +763,16 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20%;
-  height: 1000px;
-  margin-top: 11px;
+  height: 100%;
+  width: 100%;
+  margin-top: 1px;
   top: 1px;
+  transition: 2000ms ease-in-out;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 1px 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 8px;
+  z-index: 2;
 }
 
 .card-title-mobile {
@@ -900,26 +902,33 @@ button {
   flex-direction: row;
   align-items: flex-start;
   padding: 9px;
-  margin-right: 11px;
-  margin-top: -101px;
+  margin-right: 130px;
+  margin-top: -59px;
   border-radius: 8px;
   position: absolute;
-  width: 16px;
-  height: 15px;
+  width: 46px;
+  height: 45px;
   right: -1px;
-  background-color: white;
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
   .card-work-detail {
     box-sizing: border-box;
     position: fixed;
-    width: 330px;
-    height: 800px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 1px;
+    top: 1px;
+    transition: 2000ms ease-in-out;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 1px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    z-index: 2;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    margin-top: 20px;
-    margin-left: 70px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -988,8 +997,8 @@ button {
     flex-direction: row;
     align-items: flex-start;
     padding: 9px;
-    margin-left: 290px;
-    margin-top: 9px;
+    margin-left: 360px;
+    margin-top: 39px;
     border-radius: 8px;
     position: absolute;
     width: 15px;
@@ -1088,4 +1097,9 @@ button {
     flex: none;
     order: 1;
   }
+}
+
+.form-error.hidden {
+  display: none;
+  background-color: white;
 }
