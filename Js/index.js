@@ -118,7 +118,7 @@ const dataCards = [
     linkSource: "https://github.com/rebel216/",
   },
 ];
-const WorkDetailsMobile = (index) => `
+const WorkDetailsMobile = (index) => `<div class="pop-up">
   <article class="card-work-detail">
           <div>
           <button type="button" class="btn-close-detail">
@@ -146,7 +146,6 @@ const WorkDetailsMobile = (index) => `
           <div>
           <ul class="work-tag-popup">
               <li class="mobile-tag">${dataCards[index].tecnologies.tech1}</li>
-              <li class="mobile-tag">${dataCards[index].tecnologies.tech2}</li>
               <li class="mobile-tag">${dataCards[index].tecnologies.tech3}</li>
               <li class="mobile-tag">${dataCards[index].tecnologies.tech4}</li>
           </ul>
@@ -158,7 +157,7 @@ const WorkDetailsMobile = (index) => `
           </div>
         <script src="index.js"></script>
   </article>
-  
+  </div>
   `;
 
 for (let i = 0; i < allBtnPopups.length; i++) {
