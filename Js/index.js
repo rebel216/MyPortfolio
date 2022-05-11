@@ -4,12 +4,8 @@ const btnCancelMobileMenu = document.querySelector('#btn-close-nav');
 const PortfolioClicked = document.querySelector('.link-portfolio');
 const AboutClicked = document.querySelector('.link-about');
 const ContactClicked = document.querySelector('.link-contact');
-
 const allBtnPopups = document.querySelectorAll('.btn-pop');
-
 const page = document.getElementsByTagName('body')[0];
-const popup = document.getElementsByClassName('desk-work-list');
-
 
 function displaymobilemenu() {
   mobileMenu.classList.replace('mobile-menu-hide', 'mobile-menu-show');
@@ -26,7 +22,6 @@ btnCancelMobileMenu.addEventListener('click', hidemobilemenu);
 PortfolioClicked.addEventListener('click', hidemobilemenu);
 AboutClicked.addEventListener('click', hidemobilemenu);
 ContactClicked.addEventListener('click', hidemobilemenu);
-
 
 const dataCards = [
   {
@@ -204,4 +199,3 @@ submit1.addEventListener('click', (event) => {
     event.preventDefault();
   }
 });
-
