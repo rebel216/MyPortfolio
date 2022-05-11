@@ -25,3 +25,20 @@ btnCancelMobileMenu.addEventListener("click", hidemobilemenu);
 PortfolioClicked.addEventListener("click", hidemobilemenu);
 AboutClicked.addEventListener("click", hidemobilemenu);
 ContactClicked.addEventListener("click", hidemobilemenu);
+
+
+  /* FORM VALIDATIONS */
+
+  const submit = document.getElementById('submit-form');
+  const emailError = document.getElementById('error');
+  
+  submit.addEventListener('click', (event) => {
+    const email = document.getElementById('email-form').value;
+    const emailValidation = /[A-Z]/.test(email);
+  
+    if (emailValidation) {
+      emailError.textContent = 'To submit the form, please enter your email id in lowercase';
+      event.preventDefault();
+    }
+  });
+    
