@@ -28,21 +28,30 @@ ContactClicked.addEventListener("click", hidemobilemenu);
 /* FORM VALIDATIONS */
 
 const submit = document.getElementById("submit-form");
-const submit1 = document.getElementById("submit-form1");
+
 const emailError = document.getElementById("error");
 
 submit.addEventListener("click", (event) => {
-  const email = document.getElementsById("#email").value;
-  const email1 = document.getElementById("#email-form").value;
+  const email = document.getElementById("email-form").value;
   const emailValidation = /[A-Z]/.test(email);
-  const emailValidation1 = /[A-Z]/.test(email1);
 
   if (emailValidation) {
     emailError.textContent =
       "To submit the form, please enter your email id in lowercase";
     event.preventDefault();
-  } else if (emailValidation1) {
-    emailError.textContent =
+  }
+});
+
+const submit1 = document.getElementById("submit-form1");
+
+const emailError1 = document.getElementById("error1");
+
+submit1.addEventListener("click", (event) => {
+  const email1 = document.getElementById("email-form1").value;
+  const emailValidation1 = /[A-Z]/.test(email1);
+
+  if (emailValidation1) {
+    emailError1.textContent =
       "To submit the form, please enter your email id in lowercase";
     event.preventDefault();
   }
