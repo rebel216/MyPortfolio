@@ -5,13 +5,8 @@ const PortfolioClicked = document.querySelector('.link-portfolio');
 const AboutClicked = document.querySelector('.link-about');
 const ContactClicked = document.querySelector('.link-contact');
 const allBtnPopups = document.querySelectorAll('.btn-pop');
-var page = document.getElementsByTagName('body')[0];
+const page = document.getElementsByTagName('body')[0];
 
-btnMobileMenu.addEventListener('click', displaymobilemenu);
-btnCancelMobileMenu.addEventListener('click', hidemobilemenu);
-PortfolioClicked.addEventListener('click', hidemobilemenu);
-AboutClicked.addEventListener('click', hidemobilemenu);
-ContactClicked.addEventListener('click', hidemobilemenu);
 
 /*  Pop-up Data */
 const dataCards = [
@@ -166,6 +161,11 @@ PortfolioClicked.addEventListener('click', hidemobilemenu);
 AboutClicked.addEventListener('click', hidemobilemenu);
 ContactClicked.addEventListener('click', hidemobilemenu);
 
+btnMobileMenu.addEventListener('click', displaymobilemenu);
+btnCancelMobileMenu.addEventListener('click', hidemobilemenu);
+PortfolioClicked.addEventListener('click', hidemobilemenu);
+AboutClicked.addEventListener('click', hidemobilemenu);
+ContactClicked.addEventListener('click', hidemobilemenu);
 
 for (let i = 0; i < allBtnPopups.length; i += 1) {
   allBtnPopups[i].addEventListener('click', () => {
