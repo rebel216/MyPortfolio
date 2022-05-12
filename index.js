@@ -6,6 +6,95 @@ const AboutClicked = document.querySelector('.link-about');
 const ContactClicked = document.querySelector('.link-contact');
 const allBtnPopups = document.querySelectorAll('.btn-pop');
 const page = document.getElementsByTagName('body')[0];
+const form = document.querySelector('.form-input');
+const [firstName, lastName, email, textArea] = form.elements;
+const form1 = document.querySelector('.form-input1');
+const [firstName1, lastName1, email1, textArea1] = form1.elements;
+
+let inputData = {};
+if (localStorage.savedForm) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
+
+firstName.addEventListener('change', () => {
+  inputData.firstName = firstName.value;
+});
+
+lastName.addEventListener('change', () => {
+  inputData.lastName = lastName.value;
+});
+
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+});
+
+textArea.addEventListener('change', () => {
+  inputData.textArea = textArea.value;
+});
+
+const fillDataInput = () => {
+  if (inputData.firstName) {
+    firstName.value = inputData.firstName;
+  }
+  if (inputData.lastName) {
+    lastName.value = inputData.lastName;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.textArea) {
+    textArea.value = inputData.textArea;
+  }
+};
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  fillDataInput();
+};
+populateFields();
+form.onchange = populateFields;
+
+/* From data save mobile */
+let inputData1 = {};
+if (localStorage.savedForm1) {
+  inputData1 = JSON.parse(localStorage.getItem('savedForm1'));
+}
+
+firstName1.addEventListener('change', () => {
+  inputData1.firstName1 = firstName1.value;
+});
+
+lastName1.addEventListener('change', () => {
+  inputData1.lastName1 = lastName1.value;
+});
+
+email1.addEventListener('change', () => {
+  inputData1.email1 = email1.value;
+});
+
+textArea1.addEventListener('change', () => {
+  inputData1.textArea1 = textArea1.value;
+});
+
+const fillDataInput1 = () => {
+  if (inputData1.firstName1) {
+    firstName1.value = inputData1.firstName1;
+  }
+  if (inputData.lastName) {
+    lastName1.value = inputData1.lastName1;
+  }
+  if (inputData1.email1) {
+    email1.value = inputData1.email1;
+  }
+  if (inputData1.textArea1) {
+    textArea1.value = inputData1.textArea1;
+  }
+};
+const populateFields1 = () => {
+  localStorage.setItem('savedForm1', JSON.stringify(inputData1));
+  fillDataInput1();
+};
+populateFields1();
+form1.onchange = populateFields1;
 
 /*  Pop-up Data */
 const dataCards = [
@@ -177,6 +266,8 @@ for (let i = 0; i < allBtnPopups.length; i += 1) {
     });
   });
 }
+
+/* Form Data local storage */
 
 /* FORM VALIDATIONS */
 
