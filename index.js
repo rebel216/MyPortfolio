@@ -5,17 +5,7 @@ const PortfolioClicked = document.querySelector('.link-portfolio');
 const AboutClicked = document.querySelector('.link-about');
 const ContactClicked = document.querySelector('.link-contact');
 const allBtnPopups = document.querySelectorAll('.btn-pop');
-const page = document.getElementsByTagName('body')[0];
-
-function displaymobilemenu() {
-  mobileMenu.classList.replace('mobile-menu-hide', 'mobile-menu-show');
-  page.classList.add('noscroll');
-}
-
-function hidemobilemenu() {
-  mobileMenu.classList.replace('mobile-menu-show', 'mobile-menu-hide');
-  page.classList.remove('noscroll');
-}
+var page = document.getElementsByTagName('body')[0];
 
 btnMobileMenu.addEventListener('click', displaymobilemenu);
 btnCancelMobileMenu.addEventListener('click', hidemobilemenu);
@@ -23,6 +13,7 @@ PortfolioClicked.addEventListener('click', hidemobilemenu);
 AboutClicked.addEventListener('click', hidemobilemenu);
 ContactClicked.addEventListener('click', hidemobilemenu);
 
+/*  Pop-up Data */
 const dataCards = [
   {
     id: 0,
@@ -114,6 +105,7 @@ const dataCards = [
     linkSource: 'https://github.com/rebel216/',
   },
 ];
+
 const WorkDetailsMobile = (index) => `<div class='pop-up'>
   <article class='card-work-detail'>
           <div>
@@ -158,7 +150,24 @@ const WorkDetailsMobile = (index) => `<div class='pop-up'>
   </div>
   `;
 
-for (let i = 0; i < allBtnPopups.length; i + 1) {
+function displaymobilemenu() {
+  mobileMenu.classList.replace('mobile-menu-hide', 'mobile-menu-show');
+  page.classList.add('noscroll');
+}
+
+function hidemobilemenu() {
+  mobileMenu.classList.replace('mobile-menu-show', 'mobile-menu-hide');
+  page.classList.remove('noscroll');
+}
+
+btnMobileMenu.addEventListener('click', displaymobilemenu);
+btnCancelMobileMenu.addEventListener('click', hidemobilemenu);
+PortfolioClicked.addEventListener('click', hidemobilemenu);
+AboutClicked.addEventListener('click', hidemobilemenu);
+ContactClicked.addEventListener('click', hidemobilemenu);
+
+
+for (let i = 0; i < allBtnPopups.length; i++) {
   allBtnPopups[i].addEventListener('click', () => {
     const cardWork = document.createElement('div');
     cardWork.innerHTML = WorkDetailsMobile(i);
