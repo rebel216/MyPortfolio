@@ -16,8 +16,8 @@ const [firstName1, lastName1, email1, textArea1] = form1.elements;
 function storageAvailable() {
   let storage;
   try {
-    storage = window['localStorage'];
-    let x = '__storage_test__';
+    storage = window.localStorage;
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
