@@ -167,7 +167,7 @@ AboutClicked.addEventListener('click', hidemobilemenu);
 ContactClicked.addEventListener('click', hidemobilemenu);
 
 
-for (let i = 0; i < allBtnPopups.length; i++) {
+for (let i = 0; i < allBtnPopups.length; i += 1) {
   allBtnPopups[i].addEventListener('click', () => {
     const cardWork = document.createElement('div');
     cardWork.innerHTML = WorkDetailsMobile(i);
