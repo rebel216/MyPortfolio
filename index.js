@@ -11,79 +11,66 @@ const [firstName, lastName, email, textArea] = form.elements;
 const form1 = document.querySelector('.form-input1');
 const [firstName1, lastName1, email1, textArea1] = form1.elements;
 
-/** checks avalable storage **/
+/* checks avalable storage */
 
 function storageAvailable() {
-  var storage;
+  let storage;
   try {
-      storage = window['localStorage'];
-      var x = '__storage_test__';
-      storage.setItem(x, x);
-      storage.removeItem(x);
-      return true;
+    storage = window['localStorage'];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
   }
-  catch(e) {
-      return e instanceof DOMException && (
-          // everything except Firefox
-          e.code === 22 ||
-          // Firefox
-          e.code === 1014 ||
-          // test name field too, because code might not be present
-          // everything except Firefox
-          e.name === 'QuotaExceededError' ||
-          // Firefox
-          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-          // acknowledge QuotaExceededError only if there's something already stored
-          (storage && storage.length !== 0);
+  catch (e) {
+    return e instanceof DOMException && (e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
   }
 }
 
-
-/**end checks */
-
+/*end checks */
 
 if (storageAvailable('localStorage')) {
-      let inputData = {};
-    if (localStorage.savedForm) {
-      inputData = JSON.parse(localStorage.getItem('savedForm'));
+  let inputData = {};
+  if (localStorage.savedForm) {
+    inputData = JSON.parse(localStorage.getItem('savedForm'));
+  }
+
+  firstName.addEventListener('change', () => {
+    inputData.firstName = firstName.value;
+  });
+
+  lastName.addEventListener('change', () => {
+    inputData.lastName = lastName.value;
+  });
+
+  email.addEventListener('change', () => {
+    inputData.email = email.value;
+  });
+
+  textArea.addEventListener('change', () => {
+    inputData.textArea = textArea.value;
+  });
+
+  const fillDataInput = () => {
+    if (inputData.firstName) {
+      firstName.value = inputData.firstName;
     }
-
-    firstName.addEventListener('change', () => {
-      inputData.firstName = firstName.value;
-    });
-
-    lastName.addEventListener('change', () => {
-      inputData.lastName = lastName.value;
-    });
-
-    email.addEventListener('change', () => {
-      inputData.email = email.value;
-    });
-
-    textArea.addEventListener('change', () => {
-      inputData.textArea = textArea.value;
-    });
-
-    const fillDataInput = () => {
-      if (inputData.firstName) {
-        firstName.value = inputData.firstName;
-      }
-      if (inputData.lastName) {
-        lastName.value = inputData.lastName;
-      }
-      if (inputData.email) {
-        email.value = inputData.email;
-      }
-      if (inputData.textArea) {
-        textArea.value = inputData.textArea;
-      }
-    };
-    const populateFields = () => {
-      localStorage.setItem('savedForm', JSON.stringify(inputData));
-      fillDataInput();
-    };
-    populateFields();
-    form.onchange = populateFields;
+    if (inputData.lastName) {
+      lastName.value = inputData.lastName;
+    }
+    if (inputData.email) {
+      email.value = inputData.email;
+    }
+    if (inputData.textArea) {
+      textArea.value = inputData.textArea;
+    }
+  };
+  const populateFields = () => {
+    localStorage.setItem('savedForm', JSON.stringify(inputData));
+    fillDataInput();
+  };
+  populateFields();
+  form.onchange = populateFields;
 }
 
 /* From data save mobile */
