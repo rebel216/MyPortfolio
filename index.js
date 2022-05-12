@@ -7,7 +7,6 @@ const ContactClicked = document.querySelector('.link-contact');
 const allBtnPopups = document.querySelectorAll('.btn-pop');
 const page = document.getElementsByTagName('body')[0];
 
-
 /*  Pop-up Data */
 const dataCards = [
   {
