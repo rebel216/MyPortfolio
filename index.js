@@ -23,13 +23,7 @@ function storageAvailable() {
     return true;
   } catch (e) {
     return (
-      e instanceof DOMException &&
-      (e.code === 22 ||
-        e.code === 1014 ||
-        e.name === 'QuotaExceededError' ||
-        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-      storage &&
-      storage.length !== 0
+      e instanceof DOMException && (e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && storage && storage.length !== 0
     );
   }
 }
@@ -307,8 +301,7 @@ submit.addEventListener('click', (event) => {
   const emailValidation = /[A-Z]/.test(email);
 
   if (emailValidation) {
-    emailError.textContent =
-      'To submit the form, please enter your email id in lowercase';
+    emailError.textContent = 'To submit the form, please enter your email id in lowercase';
     event.preventDefault();
   }
 });
@@ -322,8 +315,7 @@ submit1.addEventListener('click', (event) => {
   const emailValidation1 = /[A-Z]/.test(email1);
 
   if (emailValidation1) {
-    emailError1.textContent =
-      'To submit the form, please enter your email id in lowercase';
+    emailError1.textContent = 'To submit the form, please enter your email id in lowercase';
     event.preventDefault();
   }
 });
