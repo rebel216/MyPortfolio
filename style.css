@@ -249,9 +249,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 177px;
+    margin-left: 87px;
     margin-top: -12px;
     width: 170px;
+    font-style: italic;
   }
 }
 
