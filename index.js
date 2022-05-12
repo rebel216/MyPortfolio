@@ -17,7 +17,7 @@ function storageAvailable() {
   let storage;
   try {
     storage = window['localStorage'];
-    var x = '__storage_test__';
+    let x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
@@ -27,7 +27,7 @@ function storageAvailable() {
   }
 }
 
-/*end checks */
+/* end checks */
 
 if (storageAvailable('localStorage')) {
   let inputData = {};
@@ -99,7 +99,7 @@ const fillDataInput1 = () => {
   if (inputData1.firstName1) {
     firstName1.value = inputData1.firstName1;
   }
-  if (inputData.lastName) {
+  if (inputData1.lastName1) {
     lastName1.value = inputData1.lastName1;
   }
   if (inputData1.email1) {
