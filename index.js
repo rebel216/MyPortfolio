@@ -8,7 +8,7 @@ const allBtnPopups = document.querySelectorAll('.btn-pop');
 const page = document.getElementsByTagName('body')[0];
 const form = document.querySelector('.form-input');
 const [firstName, lastName, email, textArea] = form.elements;
-const form1 = document.querySelector('.form-input1');
+const form1 = document.querySelector('.form-input');
 const [firstName1, lastName1, email1, textArea1] = form1.elements;
 
 /* checks avalable storage */
