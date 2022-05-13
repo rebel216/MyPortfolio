@@ -36,20 +36,24 @@ if (storageAvailable('localStorage')) {
     inputData = JSON.parse(localStorage.getItem('savedForm'));
   }
 
-  firstName.addEventListener('change', () => {
+  firstName.addEventListener('keyup', () => {
     inputData.firstName = firstName.value;
   });
 
-  lastName.addEventListener('change', () => {
+  lastName.addEventListener('keyup', () => {
     inputData.lastName = lastName.value;
   });
 
-  email.addEventListener('change', () => {
+  email.addEventListener('keyup', () => {
     inputData.email = email.value;
   });
 
-  textArea.addEventListener('change', () => {
+  textArea.addEventListener('keyup', () => {
     inputData.textArea = textArea.value;
+  });
+
+  form.addEventListener('click', () => {
+    inputData = JSON.parse(localStorage.getItem('savedForm'));
   });
 
   const fillDataInput = () => {
@@ -80,20 +84,23 @@ if (localStorage.savedForm1) {
   inputData1 = JSON.parse(localStorage.getItem('savedForm1'));
 }
 
-firstName1.addEventListener('change', () => {
+firstName1.addEventListener('keyup', () => {
   inputData1.firstName1 = firstName1.value;
 });
 
-lastName1.addEventListener('change', () => {
+lastName1.addEventListener('keyup', () => {
   inputData1.lastName1 = lastName1.value;
 });
 
-email1.addEventListener('change', () => {
+email1.addEventListener('keyup', () => {
   inputData1.email1 = email1.value;
 });
 
-textArea1.addEventListener('change', () => {
+textArea1.addEventListener('keyup', () => {
   inputData1.textArea1 = textArea1.value;
+});
+form1.addEventListener('click', () => {
+  inputData1 = JSON.parse(localStorage.getItem('savedForm1'));
 });
 
 const fillDataInput1 = () => {
