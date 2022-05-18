@@ -130,11 +130,8 @@ const dataCards = [
     id: 0,
     url: './asset/cat1.jpg',
     title: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: `The global summit on Climate change . App helps one to know about the conference , different speaker attending and register to attend the conference ,
+     get exposure to new ideas and contribute new ideas for benefit of humanity.`,
     tecnologies: {
       tech1: 'React',
       tech2: 'css',
