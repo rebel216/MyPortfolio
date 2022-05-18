@@ -130,10 +130,8 @@ const dataCards = [
     id: 0,
     url: './asset/project-1.png',
     title: 'Conference WebPage',
-    description: `The Global Summit brings together the community of experts, academics, and activists who comprise the Creative Commons affiliate network in a different country every two years.
-This year, we hope to expand our invitation list including organizations and individuals who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge.
-So if you're active and engaged in the worlds of open content and knowledge-free software advocates, Wikipedians, Open Knowledge. galleries, libraries, museums, archives, governments and foundations, lawyers, and activists - we
-hope you'll consider joining us this year to build a stronger, more vibrant commons together.`,
+    description: `The global summit on Climate change . App helps one to know about the conference , different speaker attending and register to attend the conference ,
+     get exposure to new ideas and contribute new ideas for benefit of humanity.`,
     tecnologies: {
       tech1: 'React',
       tech2: 'css',
