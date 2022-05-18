@@ -128,21 +128,20 @@ form1.onchange = populateFields1;
 const dataCards = [
   {
     id: 0,
-    url: './asset/cat1.jpg',
-    title: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './asset/project-1.png',
+    title: 'Conference WebPage',
+    description: `The Global Summit brings together the community of experts, academics, and activists who comprise the Creative Commons affiliate network in a different country every two years.
+This year, we hope to expand our invitation list including organizations and individuals who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge.
+So if you're active and engaged in the worlds of open content and knowledge-free software advocates, Wikipedians, Open Knowledge. galleries, libraries, museums, archives, governments and foundations, lawyers, and activists - we
+hope you'll consider joining us this year to build a stronger, more vibrant commons together.`,
     tecnologies: {
       tech1: 'React',
       tech2: 'css',
       tech3: 'JavaScript',
       tech4: 'html',
     },
-    linkVersion: 'https://google.com/',
-    linkSource: 'https://github.com/rebel216/',
+    linkVersion: 'https://rebel216.github.io/Capstone-Project-1/index.html',
+    linkSource: 'https://github.com/rebel216/Capstone-Project-1',
   },
   {
     id: 1,
