@@ -143,74 +143,64 @@ const dataCards = [
   },
   {
     id: 1,
-    url: './asset/cat2.jpeg',
-    title: 'Multi-Post Stories Gain+Glory',
-    description: `Odyssey Lift-off V - Server, and Odyssey Lift-off V - Client, Course Companion App, 
-    Odyssey is Apollo's free interactive learning platform. It's the 
-    perfect place to start your GraphQL journey, and we'll be adding 
-    courses on more advanced features and topics soon.`,
+    url: './asset/budgetApp.png',
+    title: 'The Budget App',
+    description: `The Ruby Budget App is an example of a blog website.
+    It will enable a one to create manage thier earnings and savings.`,
     tecnologies: {
       tech1: 'React',
-      tech2: 'Apollo-client',
-      tech3: 'Apollo-server',
-      tech4: 'GraphQL',
+      tech2: 'JS',
+      tech3: 'Ruby',
+      tech4: 'Linters',
+      tech4: 'Rails',
     },
-    linkVersion: 'https://google.com/',
-    linkSource: 'https://github.com/rebel216',
+    linkVersion: 'https://rails-budget-app.onrender.com/',
+    linkSource: 'https://github.com/rebel216/The-Budget-App',
   },
   {
     id: 2,
-    url: './asset/cat2.jpeg',
-    title: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './asset/todo.png',
+    title: 'To Do List APP',
+    description: `To-do list App is an app that helps one to create and manage Todo list .
+    It uses local storage to store the data so that it will persist even when the webpage is closed.`,
     tecnologies: {
       tech1: 'React',
       tech2: 'Firebase',
       tech3: 'JavaScript',
       tech4: 'css',
     },
-    linkVersion: 'https://google.com/',
-    linkSource: 'https://github.com/rebel216/',
+    linkVersion: 'https://rebel216.github.io/To-Do-List/dist/',
+    linkSource: 'https://github.com/rebel216/ToDo-List-2',
   },
   {
     id: 3,
-    url: './asset//cat1.jpg',
-    title: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './asset/leader.png',
+    title: 'LeaderBoard',
+    description: `A leaderboard that displays scores submitted by different players. Allows submission of your own score.
+    All data is preserved thanks to the external Leaderboard API service.`,
     tecnologies: {
       tech1: 'Rubi on rails',
       tech2: 'css',
       tech3: 'JavaScript',
       tech4: 'html',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/rebel216/',
+    linkVersion: 'https://rebel216.github.io/LeaderBoard/dist',
+    linkSource: 'https://github.com/rebel216/LeaderBoard',
   },
   {
     id: 4,
     url: './asset/cat1.jpg',
-    title: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    title: 'STOCKIST WEB APP',
+    description: `The project, a frontend web application,
+    catalogue of financial values using Stock API and collect the data from my React Application.`,
     tecnologies: {
       tech1: 'Rubi on rails',
       tech2: 'css',
       tech3: 'JavaScript',
       tech4: 'html',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/rebel216/',
+    linkVersion: 'https://63416a61dc027f0008bfb05e--tranquil-gumdrop-ab7d6d.netlify.app/',
+    linkSource: 'https://github.com/rebel216/Capstone-React-Finance',
   },
 ];
 
