@@ -27,9 +27,9 @@ https://rebel216.github.io/MyPortfolio/
 ## ScreenShot
 ![Alt text](https://github.com/rebel216/MyPortfolio/blob/Portfolio-features/Screenshot%202022-04-21%20at%202.34.22%20AM.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/rebel216/MyPortfolio/blob/features-projects-aboutme/Screenshot%202022-04-22%20at%203.29.57%20AM.png?raw=true "Optional Title")
 
-![Screenshot 2022-04-30 at 4 33 40 PM](https://user-images.githubusercontent.com/30742617/166103199-0b666993-bf0c-4cd7-8351-bfe8a26a0b4c.png)
+
+
 
 
 ## Authors
