@@ -1,424 +1,219 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel=" stylesheet" href="style.css" />
-        <title>Portfolio Neeraj</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>Neeraj's Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 
-    <body>
-        <header>
-            <div class="header-nav-phone">
-                <a href="/" class="header-logo"> Welcome </a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-                <button id="mobile-menu-button" type="button" class="menu-btn">
-                    <img src="./asset/Button.svg" alt="menu link" />
-                </button>
-                <nav id="mobile-menu-hide" class="mobile-menu-hide">
-                    <button type="button" id="btn-close-nav">
-                        <img src="./asset/Icon-Cancel.svg" alt="cancel icon">
-                    </button>
-                    <ul>
-                        <li>
-                            <a href="#myworks-id" class="link-portfolio">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#aboutme-id" class="link-about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#footer-contact-id" class="link-contact">
-                                Contact
-                            </a>
-                        </li>
+<body class="body" id="body">
+  <section class="firstpage">
+    <nav class="nav">
+      <p class="welcome">Neeraj B.</p>
+      <a href="#"><img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" /></a>
+    </nav>
 
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <div class="wrapper">
+      <ul class="header-mobile nav-items">
+        <li class="header-mobile-text item"><a class="nav-link" href="#body">Portfolio</a></li>
+        <li class="header-mobile-text item"><a class="nav-link" href="#About">About</a></li>
+        <li class="header-mobile-text item"><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
 
-        <section>
-            <div class="headline">
-                <nav>
-                    <ul class="nav-desktop">
-                        <li>
-                            <a href="#myworks-id" class="link-portfolio">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#aboutme-id" class="link-about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact-id-desk" class="link-contact">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="form">
-                    <h1>
-                        Hey there. I’m Neeraj<br />
-                        <span>I’m a software developer</span>
-                    </h1>
+      <header class="header">
+        <div class="header-desktop" data-visible="false">
+          <div class="cross-icon">
+            <img src="./images/cross-icon.png" alt="cross-button" />
+          </div>
 
-                    <p>
-                        I can help you build a product , feature or website Look through
-                        some of my work and experience! If you like what you see and have a
-                        project you need coded, don’t hestiate to contact me.
-                    </p>
-                </div>
-                <div class="container-flex">
-                    <div class="social-media">
-                        <a href="">
-                            <img src="./asset/twitter.svg" alt="twitter icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/linkedin.svg" alt="linkedin icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/medium.svg" alt="medium icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/github.svg" alt="github icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/angellist.svg" alt="angellist icon" />
-                        </a>
-                        <div>
-                            <a href="">
-                                <img class="disabled" src="./asset/Disabled.svg" alt="Tonic work" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="container-flex" id="myworks-id">
-                <h1 class="recent-works" hidden>My Recent <br />Works</h1>
-                <h1 class="recent-works-desk" hidden>My Recent Works</h1>
-                <img class="indicator" src="./asset/Indicator.svg" alt="Tonic work" />
-            </div>
-            <div>
-                <ul class="desk-work-list">
-                    <li>
-                        <article class="work-card">
-                            <img src="./asset/project-1.png" alt="Tonic work" class="work-image" />
-                            <h2 class="work-title">
-                                Climate Change Conference
-                                <br />
-
-                            </h2>
-
-                            <div class="work-tags">
-                                <ul>
-                                    <li class="tag">CSS</li>
-                                    <li class="tag">Javascipt</li>
-                                    <li class="tag">HTML</li>
-                                    <li class="tag">Linters</li>
-                                </ul>
-                            </div>
-                            <div class="btn">
-                                <button type="button" class="btn-pop">See Project</button>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="work-card">
-                            <img src="./asset/budgetApp.png" alt="Tonic work" class="work-image" />
-                            <h2 class="work-title">
-                                The Budget
-                                <br />
-                                App
-                            </h2>
-
-                            <div class="work-tags">
-                                <ul>
-                                    <li class="tag">CSS</li>
-                                    <li class="tag">Javascipt</li>
-                                    <li class="tag">HTML</li>
-                                    <li class="tag">Ruby</li>
-                                </ul>
-                            </div>
-                            <div class="btn">
-                                <button type="button" class="btn-pop">See Project</button>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="work-card">
-                            <img src="./asset/todo.png" alt="Tonic work" class="work-image" />
-                            <h2 class="work-title">
-                                To Do List
-                                <br />
-                                APP
-                            </h2>
-
-                            <div class="work-tags">
-                                <ul>
-                                    <li class="tag">CSS</li>
-                                    <li class="tag">Javascipt</li>
-                                    <li class="tag">HTML</li>
-                                    <li class="tag">Ruby</li>
-                                </ul>
-                            </div>
-                            <div class="btn">
-                                <button type="button" class="btn-pop">See Project</button>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="work-card">
-                            <img src="./asset/leader.png" alt="Tonic work" class="work-image" />
-                            <h2 class="work-title">
-                               The
-                                <br />
-                                LeaderBoard
-                            </h2>
-
-                            <div class="work-tags">
-                                <ul>
-                                    <li class="tag">CSS</li>
-                                    <li class="tag">Javascipt</li>
-                                    <li class="tag">HTML</li>
-                                    <li class="tag">Ruby</li>
-                                </ul>
-                            </div>
-                            <div class="btn">
-                                <button type="button" class="btn-pop">See Project</button>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="aboutmeimage">
-            <div class="form" id="aboutme-id">
-                <h2>About Me</h2>
-
-                <p class="about-me">
-                    I can help you build a product , feature or website Look through some
-                    of my work and experience! If you like what you see and have a project
-                    you need coded, don’t hestiate to contact me.
-                </p>
-
-                <div class="btn">
-                    <button type="button" class="btn-pop" id="GetResume">
-                        Get My Resume
-                    </button>
-                </div>
-            </div>
+          <ul class="popup-list">
+            <li id="portfolio" class="header-desktop-text abcd">
+              <a href="#">Portfolio</a>
+            </li>
+            <li id="about" class="header-desktop-text">
+              <a href="#About">About</a>
+            </li>
+            <li id="contact" class="header-desktop-text">
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="work">
-            <ul class="desk-work-list">
-                <li>
-                    <article class="skill-card">
-                        <div>
-                            <img src="./asset/icon-languages.svg" alt="languages" />
-                            <h2>Languages</h2>
-                        </div>
-                        <div>
-                            <ul class="work-tags">
-                                <li class="tag1">CSS</li>
-                                <li class="tag1">Javascipt</li>
-                                <li class="tag1">HTML</li>
-                                <li class="tag1">Ruby</li>
-                            </ul>
-                        </div>
-                        <div class="btn">
-                            <button type="button" class="btn-pop">See Project</button>
-                        </div>
-                    </article>
-                </li>
+      </header>
+      <div id="main-header">
+        <h1 class="head1 intro">
+          Hey there. I’m Neeraj Bhardwaj
+          <span class="green-color">A Full-stack web developer</span>
+        </h1>
+        <p class="intro-exp">Highly motivated and innovative Senior Full Stack Developer with almost 5 years of
+          experience. Highly
+          effective at developing new programs and fixing problems with existing systems. Works at a fast pace to
+          meet tight deadlines. Enthusiastic team player focused on achieving project objectives with speed and
+          accuracy. Complex problem-solver with an analytical and driven mindset. Dedicated to achieving
+          expanding development objectives according to tight schedules.</p>
+        <div class="bottom-img">
+          <ul class="group-icons">
+            <!-- <li>
+                <a href="https://twitter.com/mrabdul_ali"><img src="./images/twitter.svg" alt="link to my twitter" /></a>
+              </li> -->
 
-                <li>
-                    <article class="skill-card">
-                        <div>
-                            <img src="./asset/icon-frameworks.svg" alt="framework" />
-                            <h2>FrameWorks</h2>
-                        </div>
-                        <div>
-                            <ul class="work-tags">
-                                <li class="tag1">Tailwind</li>
-                                <li class="tag1">Slienium</li>
-                                <li class="tag1">GraphQl</li>
-                                <li class="tag1">Rspec</li>
-                            </ul>
-                        </div>
-                        <div class="btn">
-                            <button type="button" class="btn-pop">See Project</button>
-                        </div>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="skill-card">
-                        <div>
-                            <img src="./asset/icon-skills.svg" alt="skills" />
-                            <h2>Skills</h2>
-                        </div>
-                        <div>
-                            <ul class="work-tags">
-                                <li class="tag1">Github</li>
-                                <li class="tag1">Codekit</li>
-                                <li class="tag1">GitLab</li>
-                                <li class="tag1">Codepen</li>
-                            </ul>
-                        </div>
-                        <div class="btn">
-                            <button type="button" class="btn-pop">See Project</button>
-                        </div>
-                    </article>
-                </li>
-            </ul>
+            <li>
+              <a href="https://www.linkedin.com/in/neerajbhardwaj216/" target="_blank"><img src="./images/linkdin.svg"
+                  alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/rebel216" target="_blank"><img src="./images/github.svg" alt="github" /></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"><img src="./images/medium.svg"
+                  alt=" medium" /></a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"><img src="./images/angellist.svg"
+                  alt="angellist" /></a>
+            </li>
+          </ul>
+          <div class="go-down-container">
+            <a class="go-down" href="#abc"><img src="./images/comedown.png" alt="" /></a>
+          </div>
         </div>
-        <div class="formdesk contactimg">
-            <div class="containr-flex">
-                <div class="form">
-                    <h2>
-                        I'm always interested in hearing about new projects, so if you'd
-                        like to chat please get in touch.
-                    </h2>
-                </div>
-                <div class="formdesk">
-                    <form action="https://formspree.io/f/meqnpgav" method="POST" class="form-input1">
-                        <ul class="form">
-                            <li>
-                                <input class="input-first-name" type="text" name="fname" id="fnakme" maxlength="30"
-                                    placeholder="First name" required />
-                            </li>
-                            <li>
-                                <input class="input-last-name" type="text" name="lname" id="lnakme" maxlength="30"
-                                    placeholder="Last name" required />
-                            </li>
-                            <li>
-                                <input class="input-email" type="email" name="email" id="email-form1"
-                                    placeholder="Email address" required />
-                            </li>
-                            <li>
-                                <textarea class="text-area" name="text_area" id="text_area" cols="30" rows="10"
-                                    maxlength="50" placeholder="Enter text here" required></textarea>
-                            </li>
-                            <li>
-                                <p id="error1"></p>
-                                <button type="submit" id="submit-form1" class="btn-pop">Get In Touch</button>
+      </div>
+    </div>
+  </section>
 
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="container-flex">
-                    <div class="social-media" id="footer-contact-id">
-                        <a href="">
-                            <img src="./asset/twitter.svg" alt="twitter icon" />
-                        </a>
+  <section class="projects">
+    <div id="Portfolio" class="recent container">
+      <h2 id="abc">
+        My Recent <br />
+        Works
+      </h2>
+      <img src="./images/line.png" alt="" />
+    </div>
+    <div class="grid container"></div>
 
-                        <a href="">
-                            <img src="./asset/linkedin.svg" alt="linkedin icon" />
-                        </a>
+    <div class="aboutme" id="About">
+      <h2 class="myself">About me</h2>
+      <p class="exp">
+        I’m a full-stack software engineer specializing in Ruby, JavaScript, React, Redux, and Rails technologies to
+        build enterprise software solutions.
+        I worked for seven years  as a Embedded System software developer. I’ve spent the last few years
+        working on a number of projects like the Rfid Postal Management for Indian government ,Queue Management Systems, Automation of Parcel collection and others.
+        I have spent the last several months working remotely asynchronously with people across five different time
+        zones
+      </p>
+      <a href="https://drive.google.com/file/d/1ktWiOIu8uq4dziwu3LAeuGbRjd3HWs3R/view?usp=sharing" target="_blank"
+        class="resume-button">Get My Resume</a>
+    </div>
 
-                        <a href="">
-                            <img src="./asset/medium.svg" alt="medium icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/github.svg" alt="github icon" />
-                        </a>
-
-                        <a href="">
-                            <img src="./asset/angellist.svg" alt="angellist icon" />
-                        </a>
-
-                        <a href="wwww.gmail.com" class="mail">neerajbhardwajpkt@gmail.com</a>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobilehide deskimg" hidden>
-
-            <div class="footer-form" hidden>
-
-                <div class="getintouch">
-                    <p>
-                        I'm always interested in hearing about new projects, so if you'd
-                        like to chat please get in touch.
-                    <p>
-                </div>
-                <div id="contact-id-desk" class="form-centre"></div>
-
-                <form action="https://formspree.io/f/meqnpgav" method="POST" class="form-input">
-                    <ul>
-                        <li class="input-full-name">
-                            <input class="input-first-name-desk" type="text" name="fnfame" id="fname" maxlength="30"
-                                placeholder="First name" required />
-
-                            <input class="input-last-name-desk" type="text" name="lnfme" id="lname" maxlength="30"
-                                placeholder="Last name" required />
-                        </li>
-
-                        <li>
-                            <input class="input-email-desk" type="email" placeholder="Email address" id="email-form"
-                                required />
-                        </li>
-                        <li>
-                            <textarea class="text-area-desk" name="text_area" cols="30" rows="10" maxlength="50"
-                                placeholder="Enter text here" required></textarea>
-                        </li>
-                        <li>
-                            <p id="error"></p>
-                            <button type="submit" class="btn-pop" id="submit-form">Get In Touch</button>
-                        </li>
-                    </ul>
-                </form>
-
-            </div>
+    <div class="container" id="langs">
+      <div class="grid">
+        <div class="languages center">
+          <img class="lang-icon" src="./images/group-icon.png" alt="my specialized languages" />
+          <h3 class="lang-heading">Front-end</h3>
+          <ul class="lang-list mr-LR mr-B">
+            <li class="langs-name">React</li>
+            <li class="langs-name">Redux</li>
+            <li class="langs-name">JavaScript</li>
+            <li class="langs-name">html</li>
+            <li class="langs-name">CSS</li>
+            <li class="langs-name">Figma</li>
+          </ul>
         </div>
 
-        <footer class="footer-social">
-            <div>
-                <div class="social-footer">
-                    <a href="">
-                        <img src="./asset/twitter.svg" alt="twitter icon" />
-                    </a>
+        <div class="languages center">
+          <img class="lang-icon" src="./images/fricon.png" alt="my specialized Frameworks" />
+          <h3 class="lang-heading">Back-end</h3>
+          <ul class="lang-list mr-LR">
 
-                    <a href="">
-                        <img src="./asset/linkedin.svg" alt="linkedin icon" />
-                    </a>
 
-                    <a href="">
-                        <img src="./asset/medium.svg" alt="medium icon" />
-                    </a>
+            <li class="langs-name">Ruby</li>
+            <li class="langs-name">Ruby on rails</li>
+            <li class="langs-name">PostgreSQL</li>
+            <li class="langs-name">MSSQL</li>
+            <li class="langs-name">MongoDB</li>
+            <li class="langs-name">Oracle</li>
+            <li class="langs-name">Linq</li>
+            <li class="langs-name">Entity Framework</li>
+          </ul>
+        </div>
 
-                    <a href="">
-                        <img src="./asset/github.svg" alt="github icon" />
-                    </a>
+        <div class="languages center">
+          <img class="lang-icon" src="./images/skill-icon.png" alt="skills i have mastered" />
+          <h3 class="lang-heading">Other Professional Skills</h3>
+          <ul class="lang-list">
+            <li class="langs-name">Git, GitHub</li>
+            <li class="langs-name">Heroku, Netlify</li>
+            <li class="langs-name">Code Reviewer</li>
+            <li class="langs-name">Remote Pair-Programming</li>
+            <li class="langs-name">Mentoring, Teamwork</li>
+            <li class="langs-name">Dev Tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="lastpage container">
+        <div class="conclusion-text center">
+          <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        </div>
+        <form id="Contact" class="contact" action="https://formspree.io/f/xzbqdewo" method="post">
+          <label for="full-name"></label>
+          <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name"
+            maxlength="30" required />
 
-                    <a href="">
-                        <img src="./asset/angellist.svg" alt="angellist icon" />
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <script src="index.js"></script>
-    </body>
+          <label for="email-address"></label>
+          <input title="type your email address" id="email-address" class="info" name="Email" type="email"
+            placeholder="Email address" required />
+
+          <label for="text"></label>
+          <textarea class="textarea" id="text" name="Text" cols="30" rows="10" maxlength="500"
+            placeholder="Enter text area" required></textarea>
+
+          <button class="resume-button contact-btn" type="submit">Get in touch</button>
+          <div class="error hide">
+            <p class="error-message"></p>
+          </div>
+        </form>
+      </div>
+      <ul class="contact-lists">
+        <li>
+          <a href="https://www.linkedin.com/in/neerajbhardwaj216/" target="_blank"><img src="./images/linkdin.svg"
+              alt=" linkedin" /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"><img src="./images/medium.svg" alt=" medium" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/rebel216" target="_blank"><img src="./images/github.svg" alt=" github" /></a>
+        </li>
+        <li>
+          <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"><img src="./images/angellist.svg"
+              alt=" angellist" /></a>
+        </li>
+      </ul>
+      <p class="email">Neerajbhardwajpkt@gmail.com</p>
+    </footer>
+  </section>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/form.js" type="module"></script>
+</body>
 
 </html>
