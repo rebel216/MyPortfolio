@@ -1,219 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta http-equiv="cache-control" content="max-age=0" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
-  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <title>Neeraj's Portfolio</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neeraj's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<body>
+  <nav id="menu-desktop" class="menu-desktop">
+    <a href="#work-section">Portfolio</a>
+    <a href="#about-section">About</a>
+    <a href="#contact-background">Contact</a>
+  </nav>
 
-<body class="body" id="body">
-  <section class="firstpage">
-    <nav class="nav">
-      <p class="welcome">Neeraj B.</p>
-      <a href="#"><img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" /></a>
+  <header class="toolbar" id="toolbar">
+
+    <nav id="main-menu" class="mobile-nav">
+      <a id="menu-icon" href="#mobile-menu" onclick="MobileMenu()"><img src="./images/hamburger-icon.svg" alt="Menu"></a>
+
+      <!-- MobileMenu Only appears when Hamburguer Icon is pressed -->
+      <div id="MobileMenu" >
+        <a id="close-menu" class="close-menu" onclick="MobileMenu()" >
+          <img src="./images/close-x.svg"  alt="close menu">
+        </a>
+        <a href="#work-section" onclick="MobileMenu()" class="menu">Portfolio</a>
+        <a href="#about-section" onclick="MobileMenu()" class="menu">About</a>
+        <a href="#contact-background" onclick="MobileMenu()" class="menu">Contact</a>
+      </div>
+
     </nav>
+  </header>
 
-    <div class="wrapper">
-      <ul class="header-mobile nav-items">
-        <li class="header-mobile-text item"><a class="nav-link" href="#body">Portfolio</a></li>
-        <li class="header-mobile-text item"><a class="nav-link" href="#About">About</a></li>
-        <li class="header-mobile-text item"><a class="nav-link" href="#Contact">Contact</a></li>
-      </ul>
 
-      <header class="header">
-        <div class="header-desktop" data-visible="false">
-          <div class="cross-icon">
-            <img src="./images/cross-icon.png" alt="cross-button" />
-          </div>
+  <main class="main-container">
 
-          <ul class="popup-list">
-            <li id="portfolio" class="header-desktop-text abcd">
-              <a href="#">Portfolio</a>
-            </li>
-            <li id="about" class="header-desktop-text">
-              <a href="#About">About</a>
-            </li>
-            <li id="contact" class="header-desktop-text">
-              <a href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <div id="main-header">
-        <h1 class="head1 intro">
-          Hey there. I’m Neeraj Bhardwaj
-          <span class="green-color">A Full-stack web developer</span>
-        </h1>
-        <p class="intro-exp">Highly motivated and innovative Senior Full Stack Developer with almost 5 years of
-          experience. Highly
-          effective at developing new programs and fixing problems with existing systems. Works at a fast pace to
-          meet tight deadlines. Enthusiastic team player focused on achieving project objectives with speed and
-          accuracy. Complex problem-solver with an analytical and driven mindset. Dedicated to achieving
-          expanding development objectives according to tight schedules.</p>
-        <div class="bottom-img">
-          <ul class="group-icons">
-            <!-- <li>
-                <a href="https://twitter.com/mrabdul_ali"><img src="./images/twitter.svg" alt="link to my twitter" /></a>
-              </li> -->
-
+    <section class="section-headline" id="section-headline">
+      <div class="headline">
+        <h1 class="welcome" >I'm Neeraj Bhardwaj.<br>
+            Glad to see you!</h1>
+        <p class="welcome1">
+          I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
+        </p>
+        <h3>LET'S CONNECT</h3>
+        <div>
+          <ul class="icons-social" >
             <li>
-              <a href="https://www.linkedin.com/in/neerajbhardwaj216/" target="_blank"><img src="./images/linkdin.svg"
-                  alt="linkedin" /></a>
+              <a href="https://www.github.com/rebel216" target="_blank"  rel="noopener noreferrer">
+                <img src="images/github.png" class="social" alt="Github"></a>
             </li>
             <li>
-              <a href="https://github.com/rebel216" target="_blank"><img src="./images/github.svg" alt="github" /></a>
+              <a href="https://www.linkedin.com/in/neerajbhardwaj216" target="_blank"  rel="noopener noreferrer">
+                <img src="images/Linkedin.png" class="social" alt="Linkedin"></a>
             </li>
             <li>
-              <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"><img src="./images/medium.svg"
-                  alt=" medium" /></a>
+              <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"  rel="noopener noreferrer">
+                <img src="images/angellist.png" class="social" alt="Angellist"></a>
             </li>
             <li>
-              <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"><img src="./images/angellist.svg"
-                  alt="angellist" /></a>
+              <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"  rel="noopener noreferrer">
+                <img src="images/medium.png" class="social" alt="Medium"></a>
             </li>
-          </ul>
-          <div class="go-down-container">
-            <a class="go-down" href="#abc"><img src="./images/comedown.png" alt="" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div id="Portfolio" class="recent container">
-      <h2 id="abc">
-        My Recent <br />
-        Works
-      </h2>
-      <img src="./images/line.png" alt="" />
-    </div>
-    <div class="grid container"></div>
-
-    <div class="aboutme" id="About">
-      <h2 class="myself">About me</h2>
-      <p class="exp">
-        I’m a full-stack software engineer specializing in Ruby, JavaScript, React, Redux, and Rails technologies to
-        build enterprise software solutions.
-        I worked for seven years  as a Embedded System software developer. I’ve spent the last few years
-        working on a number of projects like the Rfid Postal Management for Indian government ,Queue Management Systems, Automation of Parcel collection and others.
-        I have spent the last several months working remotely asynchronously with people across five different time
-        zones
-      </p>
-      <a href="https://drive.google.com/file/d/1ktWiOIu8uq4dziwu3LAeuGbRjd3HWs3R/view?usp=sharing" target="_blank"
-        class="resume-button">Get My Resume</a>
-    </div>
-
-    <div class="container" id="langs">
-      <div class="grid">
-        <div class="languages center">
-          <img class="lang-icon" src="./images/group-icon.png" alt="my specialized languages" />
-          <h3 class="lang-heading">Front-end</h3>
-          <ul class="lang-list mr-LR mr-B">
-            <li class="langs-name">React</li>
-            <li class="langs-name">Redux</li>
-            <li class="langs-name">JavaScript</li>
-            <li class="langs-name">html</li>
-            <li class="langs-name">CSS</li>
-            <li class="langs-name">Figma</li>
-          </ul>
-        </div>
-
-        <div class="languages center">
-          <img class="lang-icon" src="./images/fricon.png" alt="my specialized Frameworks" />
-          <h3 class="lang-heading">Back-end</h3>
-          <ul class="lang-list mr-LR">
-
-
-            <li class="langs-name">Ruby</li>
-            <li class="langs-name">Ruby on rails</li>
-            <li class="langs-name">PostgreSQL</li>
-            <li class="langs-name">MSSQL</li>
-            <li class="langs-name">MongoDB</li>
-            <li class="langs-name">Oracle</li>
-            <li class="langs-name">Linq</li>
-            <li class="langs-name">Entity Framework</li>
-          </ul>
-        </div>
-
-        <div class="languages center">
-          <img class="lang-icon" src="./images/skill-icon.png" alt="skills i have mastered" />
-          <h3 class="lang-heading">Other Professional Skills</h3>
-          <ul class="lang-list">
-            <li class="langs-name">Git, GitHub</li>
-            <li class="langs-name">Heroku, Netlify</li>
-            <li class="langs-name">Code Reviewer</li>
-            <li class="langs-name">Remote Pair-Programming</li>
-            <li class="langs-name">Mentoring, Teamwork</li>
-            <li class="langs-name">Dev Tools</li>
           </ul>
         </div>
       </div>
-    </div>
-    <footer class="footer">
-      <div class="lastpage container">
-        <div class="conclusion-text center">
-          <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        </div>
-        <form id="Contact" class="contact" action="https://formspree.io/f/xzbqdewo" method="post">
-          <label for="full-name"></label>
-          <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name"
-            maxlength="30" required />
+    </section>
 
-          <label for="email-address"></label>
-          <input title="type your email address" id="email-address" class="info" name="Email" type="email"
-            placeholder="Email address" required />
+    <section class="work-section" id="work-section">
+    </section>
 
-          <label for="text"></label>
-          <textarea class="textarea" id="text" name="Text" cols="30" rows="10" maxlength="500"
-            placeholder="Enter text area" required></textarea>
+    <section id="popup-work-section">
+    </section>
 
-          <button class="resume-button contact-btn" type="submit">Get in touch</button>
-          <div class="error hide">
-            <p class="error-message"></p>
-          </div>
-        </form>
+    <section class="about-section" id="about-section">
+      <div class="about">
+        <h2>About Myself</h2>
+        <p>I'm a full-stack developer, passionate about ideating, conceptualizing,
+          and producing quality end products focused on the client's business and end-user.
+          Open to exploring interesting development opportunities!<br>
+          If you like what you see and have a project you need coded, don't
+          hesitate to contact me.
+        </p>
+        <h3>LET'S CONNECT</h3>
+        <div>
+            <ul class="icons-social">
+              <li>
+                <a href="https://www.github.com/rebel216" target="_blank"  rel="noopener noreferrer">
+                  <img src="images/github.png" class="social" alt="Github"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/neerajbhardwaj216" target="_blank"  rel="noopener noreferrer">
+                  <img src="images/Linkedin.png" class="social" alt="Linkedin"></a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"  rel="noopener noreferrer">
+                  <img src="images/angellist.png" class="social" alt="Angellist"></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"  rel="noopener noreferrer">
+                  <img src="images/medium.png" class="social" alt="Medium"></a>
+              </li>
+              </ul>
+        </div >
+
+        <a href="https://docs.google.com/document/d/1YKS5-w_p_vERr1z9CWA_ebVsfJhwXrDrLoSTGcp1AxY" target="_blank"  rel="noopener noreferrer">
+          <button type="button" class="getresume-btn">
+          Get my resume</button>
+        </a>
+
       </div>
-      <ul class="contact-lists">
-        <li>
-          <a href="https://www.linkedin.com/in/neerajbhardwaj216/" target="_blank"><img src="./images/linkdin.svg"
-              alt=" linkedin" /></a>
-        </li>
-        <li>
-          <a href="https://medium.com/@neerajbhardwajpkt" target="_blank"><img src="./images/medium.svg" alt=" medium" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/rebel216" target="_blank"><img src="./images/github.svg" alt=" github" /></a>
-        </li>
-        <li>
-          <a href="https://angel.co/u/neeraj-bhardwaj-14" target="_blank"><img src="./images/angellist.svg"
-              alt=" angellist" /></a>
-        </li>
-      </ul>
-      <p class="email">Neerajbhardwajpkt@gmail.com</p>
-    </footer>
-  </section>
 
-  <script src="./js/script.js"></script>
-  <script src="./js/form.js" type="module"></script>
+      <div class="about-details">
+        <div class="about-items">
+          <h3>Skills: Languages & Frameworks </h3>
+        </div>
+        <div class="ul-categories">
+          <img src="images/l-and-f.png"  alt="Frameworks">
+
+
+        </div>
+        <div class="ul-categories1">
+          <img src="images/l-and-f.png"  alt="Frameworks">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact-background" id="contact-background">
+      <div class="contactform-section">
+        <div class="contact-info">
+          <h2>Contact me</h2>
+          <p>If you have an application you
+              are interested in developing, a
+              feature that you need built or a
+              project that needs coding. I'd
+              love to help with it</p>
+          <form onsubmit="return email_validation()" id="contact-form" class="contact-form" action="https://formspree.io/f/xzbqdewo" method="post">
+            <ul class="contact-input-form">
+              <li>
+                <label><input id="fullName"  class="contact-inputs" type="text" name="full_name" placeholder="Full name"
+                  maxlength="30" required /></label>
+              </li>
+              <li>
+                <input id="email"  class="contact-inputs" type="email" name="email" placeholder="Email address"
+                required />
+              </li>
+              <li>
+                <label><textarea id="contactText"  placeholder="Write your message here"
+                class="contact-txt" name="contact_text"
+                cols="30" rows="5"  maxlength="500" required
+                ></textarea></label>
+              </li>
+              <li class="contact-button-li">
+                <button type="submit" class="contact-button">
+                Get in Touch</button>
+              </li>
+            </ul>
+          </form>
+          <p id="label-email">Please, use lower case for e-mail</p>
+          <img src="images/last-line.svg"  alt="end of portfolio">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="code.js"></script>
+  <script src="cards.js"></script>
 </body>
-
 </html>
